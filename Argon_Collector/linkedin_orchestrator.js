@@ -23,6 +23,7 @@
     phones: new Map(),
     checkedSources: new Set(),
     exhaustedSources: new Set(),
+    sourceCredits: {},
     phoneSource: "",
     sourceStatus: {
       contactout: "⏳ Chờ",
@@ -233,16 +234,34 @@
     const { eventType, payload } = msg;
     if (!payload || typeof payload !== "object") return;
 
+    if (eventType === "credit_sync") {
+      const svc = payload.service || "";
+      if (svc && typeof payload.emailCredit === "number") {
+        state.sourceCredits[svc] = payload.emailCredit;
+        if (payload.emailCredit <= 0 || payload.outOfCredits) {
+          state.exhaustedSources.add(svc);
+          state.sourceStatus[svc] = "🔴 0 cr";
+        }
+        renderHud();
+      }
+      return;
+    }
+
     if (eventType === "source_partial" || eventType === "source_result") {
       const src = payload.source || "";
       if (src) state.checkedSources.add(src);
+      if (src && typeof payload.remainingCredit === "number") {
+        state.sourceCredits[src] = payload.remainingCredit;
+      }
       if (payload.outOfCredits && src) {
         state.exhaustedSources.add(src);
-        state.sourceStatus[src] = "🔴 Hết cr";
+        state.sourceCredits[src] = 0;
+        state.sourceStatus[src] = "🔴 0 cr";
       } else if (src) {
         const eCount = (payload.emails || []).length;
         const pCount = (payload.phones || []).length;
-        state.sourceStatus[src] = eCount > 0 || pCount > 0 ? `✅ ${eCount}E/${pCount}P` : "⚪ 0 KQ";
+        const crSuffix = typeof state.sourceCredits[src] === "number" ? ` (${state.sourceCredits[src]}cr)` : "";
+        state.sourceStatus[src] = (eCount > 0 || pCount > 0 ? `✅ ${eCount}E/${pCount}P` : "⚪ 0 KQ") + crSuffix;
       }
 
       for (const pe of payload.personalEmails || []) state.personalEmails.add(pe);
@@ -287,6 +306,7 @@
         phones: new Map(),
         checkedSources: new Set(),
         exhaustedSources: new Set(),
+        sourceCredits: {},
         phoneSource: "",
         sourceStatus: {
           contactout: "⏳ Chờ",
@@ -433,6 +453,7 @@
           source: Array.from(state.checkedSources).join("+") || "multi",
           checkedSources: Array.from(state.checkedSources),
           exhaustedSources: Array.from(state.exhaustedSources),
+          sourceCredits: state.sourceCredits,
           phoneSource: state.phoneSource || "",
           needSignalHire,
           liUrl: state.liUrl,

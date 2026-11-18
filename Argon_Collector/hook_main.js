@@ -247,6 +247,15 @@
 
     if (typeof obj === "object") {
       let creditChanged = false;
+
+      // Trường hợp object có cặp { used, limit / total / max } -> tính động số credit còn lại = limit - used
+      const usedVal = obj.used ?? obj.credits_used ?? obj.creditsUsed ?? obj.consumed;
+      const limitVal = obj.limit ?? obj.total ?? obj.max ?? obj.quota ?? obj.credits_limit ?? obj.creditsLimit;
+      if (typeof usedVal === "number" && typeof limitVal === "number" && limitVal >= usedVal && limitVal <= 5000) {
+        st.credit = Math.max(0, limitVal - usedVal);
+        creditChanged = true;
+      }
+
       for (const [k, v] of Object.entries(obj)) {
         const lk = k.toLowerCase();
         if (
@@ -254,20 +263,27 @@
             lk === "credits" ||
             lk === "emailcredit" ||
             lk === "email_credit" ||
+            lk === "email_credits" ||
+            lk === "emailcredits" ||
             lk === "credits_left" ||
             lk === "creditsleft" ||
             lk === "remaining_credits" ||
             lk === "remainingcredits" ||
+            lk === "available_credits" ||
+            lk === "availablecredits" ||
+            lk === "export_credits" ||
+            lk === "lookup_credits" ||
             lk === "balance" ||
-            lk === "quota_left") &&
+            lk === "quota_left" ||
+            lk === "quotaleft") &&
           typeof v === "number"
         ) {
           st.credit = v;
           creditChanged = true;
-        } else if ((lk === "phonecredit" || lk === "phone_credit") && typeof v === "number") {
+        } else if ((lk === "phonecredit" || lk === "phone_credit" || lk === "phone_credits") && typeof v === "number") {
           st.phoneCredit = v;
           creditChanged = true;
-        } else if (lk === "credits" && v && typeof v === "object") {
+        } else if ((lk === "credits" || lk === "quota" || lk === "balance") && v && typeof v === "object") {
           if (typeof v.email === "number") {
             st.credit = v.email;
             creditChanged = true;
@@ -280,6 +296,10 @@
             st.credit = v.remaining;
             creditChanged = true;
           }
+          if (typeof v.available === "number") {
+            st.credit = v.available;
+            creditChanged = true;
+          }
         }
         walkJsonPayload(v, source, k);
       }
@@ -289,6 +309,7 @@
           accountEmail: st.accountEmail,
           emailCredit: st.credit,
           phoneCredit: st.phoneCredit,
+          outOfCredits: st.credit === 0,
         });
       }
     }
@@ -545,12 +566,103 @@
     return "";
   }
 
-  // Quét DOM của frame/shadowRoot hiện tại để gom thêm Email & SĐT hiển thị trên UI
+  // Quét động số dư Credit hiển thị trực tiếp trên DOM / Badge của từng Extension (không dùng số gán cứng)
+  function scanDomCreditsForSource(activeSvc) {
+    if (!activeSvc || !perSourceState[activeSvc]) return;
+    const st = perSourceState[activeSvc];
+    const frameSvc = detectServiceFromUrl(window.location.href);
+
+    const nodes = queryAllDeep("span, div, p, b, strong, small, button, a");
+    let foundCredit = null;
+    let foundOut = false;
+
+    for (const node of nodes) {
+      if (!isVisible(node)) continue;
+      if (!frameSvc) {
+        const nodeSvc = inferElementService(node);
+        if (nodeSvc !== activeSvc) continue;
+      }
+      if (node.children && node.children.length > 2) continue;
+
+      const rawTxt = (node.innerText || node.textContent || "").replace(/\s+/g, " ").trim();
+      if (!rawTxt || rawTxt.length > 90) continue;
+      const lower = rawTxt.toLowerCase();
+
+      if (
+        lower.includes("out of credit") ||
+        lower.includes("no credits left") ||
+        lower.includes("0 credits left") ||
+        lower.includes("0 credit left") ||
+        lower.includes("limit reached") ||
+        lower.includes("not enough credit") ||
+        /\b0\s*\/\s*\d+\s*(?:credits?|cr)\b/i.test(rawTxt)
+      ) {
+        foundOut = true;
+        foundCredit = 0;
+        break;
+      }
+
+      // Khớp dạng "38 / 50 credits" hoặc "4/5 credits left"
+      const mFrac = rawTxt.match(/\b(\d{1,4})\s*\/\s*(\d{1,4})\s*(?:email\s+|phone\s+)?(?:credits?|cr|lượt)\b/i);
+      if (mFrac) {
+        const num = parseInt(mFrac[1], 10);
+        const den = parseInt(mFrac[2], 10);
+        if (!isNaN(num) && !isNaN(den) && num <= den && den <= 5000) {
+          foundCredit = lower.includes("used") ? Math.max(0, den - num) : num;
+          break;
+        }
+      }
+
+      // Khớp dạng "42 credits left", "42 credits remaining", "Credits: 42", "Balance: 42"
+      const mAfter = rawTxt.match(/\b(\d{1,4})\s+(?:free\s+|email\s+|monthly\s+|daily\s+)?(?:credits?|cr)\s*(?:left|remaining|available)?\b/i);
+      if (mAfter && !lower.includes("cost") && !lower.includes("use 1") && !lower.includes("use 8")) {
+        const val = parseInt(mAfter[1], 10);
+        if (!isNaN(val) && val <= 5000) {
+          foundCredit = val;
+        }
+      }
+
+      const mBefore = rawTxt.match(/\b(?:credits?\s*(?:left|remaining|balance)?|balance|remaining)\s*[:\-]\s*(\d{1,4})\b/i);
+      if (mBefore) {
+        const val = parseInt(mBefore[1], 10);
+        if (!isNaN(val) && val <= 5000) {
+          foundCredit = val;
+          break;
+        }
+      }
+    }
+
+    let changed = false;
+    if (foundOut && !st.outOfCredits) {
+      st.outOfCredits = true;
+      st.credit = 0;
+      changed = true;
+    }
+    if (typeof foundCredit === "number" && foundCredit !== st.credit) {
+      st.credit = foundCredit;
+      if (foundCredit === 0) st.outOfCredits = true;
+      changed = true;
+    }
+
+    if (changed) {
+      emitToBridge("credit_sync", {
+        service: activeSvc,
+        accountEmail: st.accountEmail,
+        emailCredit: st.credit,
+        phoneCredit: st.phoneCredit,
+        outOfCredits: st.outOfCredits,
+      });
+    }
+  }
+
+  // Quét DOM của frame/shadowRoot hiện tại để gom thêm Email, SĐT & số dư Credit thực tế hiển thị trên UI
   function scanDomForSource(targetSource) {
     const frameSvc = detectServiceFromUrl(window.location.href);
     const activeSvc = targetSource || frameSvc;
     if (!activeSvc || !perSourceState[activeSvc]) return;
     const st = perSourceState[activeSvc];
+
+    scanDomCreditsForSource(activeSvc);
 
     const nodes = queryAllDeep("a[href^='mailto:'], a[href^='tel:'], span, div, p, li, td");
     for (const node of nodes) {
@@ -733,7 +845,7 @@
       }
 
       if (cmd.action === "SCAN_DOM_ALL") {
-        for (const k of ["contactout", "kendo", "apollo", "snov", "lusha"]) {
+        for (const k of ["contactout", "kendo", "apollo", "snov", "lusha", "signalhire"]) {
           scanDomForSource(k);
           if (perSourceState[k].emails.size > 0 || perSourceState[k].phones.size > 0) {
             emitSourceUpdate(k, false);
@@ -742,4 +854,18 @@
       }
     } catch (_) {}
   });
+
+  // 6. Tự động đọc động số dư Credit từ UI/DOM của Extension mỗi 3.5s
+  setInterval(() => {
+    try {
+      const frameSvc = detectServiceFromUrl(window.location.href);
+      if (frameSvc) {
+        scanDomCreditsForSource(frameSvc);
+      } else if (window.location.href.includes("linkedin.com/")) {
+        for (const k of ["contactout", "kendo", "apollo", "snov", "lusha", "signalhire"]) {
+          scanDomCreditsForSource(k);
+        }
+      }
+    } catch (_) {}
+  }, 3500);
 })();

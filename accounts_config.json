@@ -5,16 +5,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_01@gmail.com",
-    "name": "AdsPower #01",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #01"
   },
   "acc_2": {
     "enabled": true,
@@ -22,16 +13,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_02@gmail.com",
-    "name": "AdsPower #02",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #02"
   },
   "acc_3": {
     "enabled": true,
@@ -39,16 +21,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_03@gmail.com",
-    "name": "AdsPower #03",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #03"
   },
   "acc_4": {
     "enabled": true,
@@ -56,16 +29,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_04@gmail.com",
-    "name": "AdsPower #04",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #04"
   },
   "acc_5": {
     "enabled": true,
@@ -73,16 +37,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_05@gmail.com",
-    "name": "AdsPower #05",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #05"
   },
   "acc_6": {
     "enabled": true,
@@ -90,16 +45,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_06@gmail.com",
-    "name": "AdsPower #06",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #06"
   },
   "acc_7": {
     "enabled": true,
@@ -107,16 +53,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_07@gmail.com",
-    "name": "AdsPower #07",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #07"
   },
   "acc_8": {
     "enabled": true,
@@ -124,16 +61,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_08@gmail.com",
-    "name": "AdsPower #08",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #08"
   },
   "acc_9": {
     "enabled": true,
@@ -141,16 +69,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_09@gmail.com",
-    "name": "AdsPower #09",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #09"
   },
   "acc_10": {
     "enabled": true,
@@ -158,16 +77,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_10@gmail.com",
-    "name": "AdsPower #10",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #10"
   },
   "acc_11": {
     "enabled": true,
@@ -175,16 +85,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_11@gmail.com",
-    "name": "AdsPower #11",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #11"
   },
   "acc_12": {
     "enabled": true,
@@ -192,16 +93,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_12@gmail.com",
-    "name": "AdsPower #12",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #12"
   },
   "acc_13": {
     "enabled": true,
@@ -209,16 +101,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_13@gmail.com",
-    "name": "AdsPower #13",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #13"
   },
   "acc_14": {
     "enabled": true,
@@ -226,16 +109,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_14@gmail.com",
-    "name": "AdsPower #14",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #14"
   },
   "acc_15": {
     "enabled": true,
@@ -243,16 +117,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_15@gmail.com",
-    "name": "AdsPower #15",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #15"
   },
   "acc_16": {
     "enabled": true,
@@ -260,16 +125,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_16@gmail.com",
-    "name": "AdsPower #16",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #16"
   },
   "acc_17": {
     "enabled": true,
@@ -277,16 +133,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_17@gmail.com",
-    "name": "AdsPower #17",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #17"
   },
   "acc_18": {
     "enabled": true,
@@ -294,16 +141,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_18@gmail.com",
-    "name": "AdsPower #18",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #18"
   },
   "acc_19": {
     "enabled": true,
@@ -311,16 +149,7 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_19@gmail.com",
-    "name": "AdsPower #19",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #19"
   },
   "acc_20": {
     "enabled": true,
@@ -328,15 +157,6 @@
     "proxy": "",
     "adspowerId": "",
     "gmail": "gmail_20@gmail.com",
-    "name": "AdsPower #20",
-    "lastDailyReset": "2026-11-18",
-    "credits": {
-      "contactout": 5,
-      "kendo": 50,
-      "apollo": 80,
-      "snov": 50,
-      "lusha": 40,
-      "signalhire": 10
-    }
+    "name": "AdsPower #20"
   }
 }

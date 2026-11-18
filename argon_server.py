@@ -689,6 +689,8 @@ class AppState:
         return {}
 
     def save_accounts(self) -> None:
+        """Chỉ lưu cấu hình định danh của Profile (enabled, proxy, priority, adspowerId, gmail, name).
+        TUYỆT ĐỐI KHÔNG lưu cứng số dư credit tĩnh vào file cấu hình; số dư credit luôn được đọc động từ API/DOM/LevelDB."""
         prefs = {}
         for acc in self.accounts:
             prefs[acc["id"]] = {
@@ -698,8 +700,6 @@ class AppState:
                 "adspowerId": acc.get("adspowerId", ""),
                 "gmail": acc.get("gmail", ""),
                 "name": acc.get("customName") or acc.get("name") or "",
-                "lastDailyReset": acc.get("lastDailyReset") or time.strftime("%Y-%m-%d"),
-                "credits": acc.get("credits") or dict(DEFAULT_SERVICE_CREDITS),
             }
         self.user_prefs = prefs
         try:
@@ -708,9 +708,8 @@ class AppState:
             pass
 
     def init_20_adspower_profiles(self) -> int:
-        """Khởi tạo nhanh 20 Profile (acc_1 -> acc_20) với định mức chuẩn của 6 Extension."""
+        """Khởi tạo nhanh 20 Profile (acc_1 -> acc_20) ở chế độ đọc Credit động 100%."""
         with self.lock:
-            today = time.strftime("%Y-%m-%d")
             created_count = 0
             for i in range(1, 21):
                 acc_id = f"acc_{i}"
@@ -723,8 +722,6 @@ class AppState:
                         "adspowerId": "",
                         "gmail": f"gmail_{i:02d}@gmail.com",
                         "name": f"AdsPower #{i:02d}",
-                        "lastDailyReset": today,
-                        "credits": dict(DEFAULT_SERVICE_CREDITS),
                     }
                     created_count += 1
             safe_write_json(ACCOUNTS_CONFIG_FILE, self.user_prefs)
@@ -737,7 +734,6 @@ class AppState:
         if not ap_list:
             return 0
         with self.lock:
-            today = time.strftime("%Y-%m-%d")
             synced = 0
             for idx, item in enumerate(ap_list[:20], start=1):
                 uid = str(item.get("user_id") or "").strip()
@@ -752,9 +748,7 @@ class AppState:
                 pref["name"] = item.get("name") or pref.get("name") or f"AdsPower #{idx:02d}"
                 if item.get("remark") and "@" in str(item.get("remark")):
                     pref["gmail"] = str(item.get("remark")).strip()
-                pref["lastDailyReset"] = pref.get("lastDailyReset") or today
-                if "credits" not in pref or not isinstance(pref["credits"], dict):
-                    pref["credits"] = dict(DEFAULT_SERVICE_CREDITS)
+                pref.pop("credits", None)
                 self.user_prefs[acc_id] = pref
                 synced += 1
             safe_write_json(ACCOUNTS_CONFIG_FILE, self.user_prefs)
@@ -762,7 +756,7 @@ class AppState:
             return synced
 
     def sync_all_accounts_from_disk(self) -> None:
-        """Quét động toàn bộ các thư mục trong profiles/ + user_prefs và đồng bộ sổ cái 6 Extension."""
+        """Quét động toàn bộ các thư mục trong profiles/ + user_prefs và đọc số dư Credit thực tế từ LevelDB + Live Runtime (API/DOM)."""
         PROFILES_DIR.mkdir(parents=True, exist_ok=True)
         for acc_id in list(self.user_prefs.keys()):
             (PROFILES_DIR / acc_id).mkdir(parents=True, exist_ok=True)
@@ -775,9 +769,7 @@ class AppState:
             ),
         )
 
-        today = time.strftime("%Y-%m-%d")
         new_accounts: list[dict] = []
-        prefs_modified = False
 
         for idx, pdir in enumerate(prof_dirs, start=1):
             acc_id = pdir.name
@@ -794,50 +786,31 @@ class AppState:
             ):
                 continue
 
-            raw_credits = pref.get("credits")
-            if not isinstance(raw_credits, dict):
-                raw_credits = dict(DEFAULT_SERVICE_CREDITS)
-                prefs_modified = True
-            else:
-                for k, def_v in DEFAULT_SERVICE_CREDITS.items():
-                    if k not in raw_credits or not isinstance(raw_credits[k], (int, float)):
-                        raw_credits[k] = def_v
-                        prefs_modified = True
+            # Khởi tạo bảng credit động (None = chưa đồng bộ, sẽ tự đọc từ API/DOM ngay khi trình duyệt chạy)
+            dynamic_credits: dict[str, int | None] = {k: None for k in DEFAULT_SERVICE_CREDITS}
 
-            # Tự động hồi 5 lượt/ngày cho ContactOut khi sang ngày mới
-            last_reset = pref.get("lastDailyReset") or ""
-            if last_reset != today:
-                raw_credits["contactout"] = DEFAULT_SERVICE_CREDITS["contactout"]
-                pref["lastDailyReset"] = today
-                pref["credits"] = raw_credits
-                self.user_prefs[acc_id] = pref
-                prefs_modified = True
+            # 1. Đọc từ LevelDB trên ổ đĩa (nếu có)
+            if isinstance(disk_info.get("emailCredit"), int):
+                dynamic_credits["contactout"] = disk_info["emailCredit"]
 
-            # Đồng bộ số dư thực tế nếu live_runtime báo về
+            # 2. Ghi đè bằng số dư thời gian thực bắt được từ API / DOM của 6 Extension trong phiên
             live_credits = live.get("credits") or {}
             for k, val in live_credits.items():
-                if isinstance(val, int) and val >= 0:
-                    raw_credits[k] = val
+                if k in dynamic_credits and isinstance(val, int) and val >= 0:
+                    dynamic_credits[k] = val
 
             email_credit = (
                 live["emailCredit"]
                 if isinstance(live.get("emailCredit"), int)
-                else (
-                    disk_info.get("emailCredit")
-                    if isinstance(disk_info.get("emailCredit"), int)
-                    else raw_credits.get("contactout", 5)
-                )
+                else disk_info.get("emailCredit")
             )
-            raw_credits["contactout"] = email_credit
+            if isinstance(email_credit, int):
+                dynamic_credits["contactout"] = email_credit
 
             phone_credit = (
                 live["phoneCredit"]
                 if isinstance(live.get("phoneCredit"), int)
-                else (
-                    disk_info.get("phoneCredit")
-                    if isinstance(disk_info.get("phoneCredit"), int)
-                    else raw_credits.get("contactout", 5)
-                )
+                else disk_info.get("phoneCredit")
             )
             holder_name = live.get("holderName") or disk_info["holderName"] or pref.get("name") or ""
             account_email = (
@@ -866,8 +839,7 @@ class AppState:
                 "proxy": pref.get("proxy", ""),
                 "enabled": pref.get("enabled", True),
                 "priority": pref.get("priority", idx),
-                "lastDailyReset": pref.get("lastDailyReset", today),
-                "credits": dict(raw_credits),
+                "credits": dynamic_credits,
                 "extInstalled": bool(disk_info["extInstalled"] or live.get("extInstalled") or pref.get("adspowerId")),
                 "extensionId": disk_info["extensionId"] or live.get("extensionId") or "",
                 "userId": disk_info["userId"] or live.get("userId"),
@@ -885,11 +857,9 @@ class AppState:
 
         new_accounts.sort(key=lambda a: (a.get("priority", 99), a["id"]))
         self.accounts = new_accounts
-        if prefs_modified:
-            self.save_accounts()
 
     def get_task_plan(self, li_url: str) -> dict:
-        """Trả về kế hoạch điều phối động (Task Plan) cho URL trên Profile đang chạy."""
+        """Trả về kế hoạch điều phối động (Task Plan) cho URL dựa trên trạng thái Credit đọc động thực tế."""
         with self.lock:
             rec = self._find_record_for_url(li_url)
             checked = set((rec.get("checkedSources") or []) if rec else [])
@@ -900,20 +870,27 @@ class AppState:
             if not acc and self.accounts:
                 acc = self.accounts[0]
 
-            credits = (acc.get("credits") if acc else None) or dict(DEFAULT_SERVICE_CREDITS)
+            credits = (acc.get("credits") if acc else None) or {}
+
+            def _is_available(svc_name: str, min_required: int = 1) -> bool:
+                val = credits.get(svc_name)
+                # Nếu val is None (chưa đọc được số dư trong phiên) -> vẫn cho phép chạy để hook_main.js đọc động số dư thực tế
+                if val is None:
+                    return True
+                return isinstance(val, (int, float)) and val >= min_required
 
             email_exts = []
             for svc in ["contactout", "kendo", "snov", "apollo", "lusha"]:
-                if credits.get(svc, 0) > 0 and svc not in checked:
+                if _is_available(svc, 1) and svc not in checked:
                     email_exts.append(svc)
 
             phone_waterfall = []
             if not already_has_phone:
-                if credits.get("contactout", 0) > 0:
+                if _is_available("contactout", 1):
                     phone_waterfall.append("contactout")
-                if credits.get("lusha", 0) > 0:
+                if _is_available("lusha", 1):
                     phone_waterfall.append("lusha")
-                if credits.get("apollo", 0) >= 8:
+                if _is_available("apollo", 8):
                     phone_waterfall.append("apollo")
 
             return {
@@ -1236,16 +1213,13 @@ class AppState:
             live = self.live_runtime.setdefault(acc_id, {})
             live_credits = live.setdefault("credits", {})
             pref = self.user_prefs.setdefault(acc_id, {})
-            pref_credits = pref.setdefault("credits", dict(DEFAULT_SERVICE_CREDITS))
 
             svc = (data.get("service") or data.get("engine") or "").strip().lower()
             if svc in DEFAULT_SERVICE_CREDITS:
                 if data.get("outOfCredits"):
                     live_credits[svc] = 0
-                    pref_credits[svc] = 0
                 elif isinstance(data.get("emailCredit"), int):
                     live_credits[svc] = data["emailCredit"]
-                    pref_credits[svc] = data["emailCredit"]
                 if svc == "contactout" and isinstance(data.get("emailCredit"), int):
                     live["emailCredit"] = data["emailCredit"]
                 if svc == "contactout" and isinstance(data.get("phoneCredit"), int):
@@ -1280,7 +1254,6 @@ class AppState:
             if isinstance(data.get("emailCredit"), int):
                 live["emailCredit"] = data["emailCredit"]
                 live_credits["contactout"] = data["emailCredit"]
-                pref_credits["contactout"] = data["emailCredit"]
             if isinstance(data.get("phoneCredit"), int):
                 live["phoneCredit"] = data["phoneCredit"]
             live["extInstalled"] = True
@@ -1364,43 +1337,31 @@ class AppState:
 
             live = self.live_runtime.setdefault(acc_id, {})
             live_credits = live.setdefault("credits", {})
-            pref = self.user_prefs.setdefault(acc_id, {})
-            pref_credits = pref.setdefault("credits", dict(DEFAULT_SERVICE_CREDITS))
 
-            # Cập nhật sổ cái Credit của 6 Extension trên Profile hiện tại
+            # Cập nhật sổ cái Credit ĐỘNG 100% từ dữ liệu thực tế API/DOM của 6 Extension gửi về (Tuyệt đối không trừ mò -1/-8)
+            source_credits_in = item.get("sourceCredits")
+            if isinstance(source_credits_in, dict):
+                for svc_k, cr_val in source_credits_in.items():
+                    if svc_k in DEFAULT_SERVICE_CREDITS and isinstance(cr_val, int) and cr_val >= 0:
+                        live_credits[svc_k] = cr_val
+                        if svc_k == "contactout":
+                            live["emailCredit"] = cr_val
+
+            if source_engine in DEFAULT_SERVICE_CREDITS and isinstance(item.get("remainingCredit"), int):
+                live_credits[source_engine] = item["remainingCredit"]
+                if source_engine == "contactout":
+                    live["emailCredit"] = item["remainingCredit"]
+
             for ex_svc in exhausted_sources:
                 if ex_svc in DEFAULT_SERVICE_CREDITS:
                     live_credits[ex_svc] = 0
-                    pref_credits[ex_svc] = 0
+                    if ex_svc == "contactout":
+                        live["emailCredit"] = 0
 
-            if source_engine == "signalhire":
-                pref_credits["signalhire"] = max(0, int(pref_credits.get("signalhire", 10)) - 1)
-                live_credits["signalhire"] = pref_credits["signalhire"]
-                if not phone_source and (item.get("phones") or item.get("uiPhones")):
-                    phone_source = "signalhire"
-            else:
-                for svc in checked_sources:
-                    if svc not in DEFAULT_SERVICE_CREDITS:
-                        continue
-                    if svc in exhausted_sources:
-                        continue
-                    if svc == "apollo":
-                        cost = 8 if phone_source == "apollo" else 1
-                        pref_credits["apollo"] = max(0, int(pref_credits.get("apollo", 80)) - cost)
-                        live_credits["apollo"] = pref_credits["apollo"]
-                    elif svc == "contactout":
-                        if isinstance(item.get("remainingCredit"), int):
-                            pref_credits["contactout"] = item["remainingCredit"]
-                        else:
-                            pref_credits["contactout"] = max(0, int(pref_credits.get("contactout", 5)) - 1)
-                        live_credits["contactout"] = pref_credits["contactout"]
-                        live["emailCredit"] = pref_credits["contactout"]
-                    else:
-                        pref_credits[svc] = max(0, int(pref_credits.get(svc, DEFAULT_SERVICE_CREDITS[svc])) - 1)
-                        live_credits[svc] = pref_credits[svc]
+            if source_engine == "signalhire" and not phone_source and (item.get("phones") or item.get("uiPhones")):
+                phone_source = "signalhire"
 
             self.sync_all_accounts_from_disk()
-            self.save_accounts()
 
             acc_label = self._get_acc_name(acc_id)
             engine_tag = source_engine.upper()
@@ -1469,10 +1430,12 @@ class AppState:
                 delay = random.randint(MIN_DELAY_BETWEEN_URLS, MAX_DELAY_BETWEEN_URLS)
                 self.next_allowed_time = time.time() + delay
 
-                # Cách 1: Mỗi Profile chạy đúng nhịp 5 URL (hoặc khi ContactOut về 0 credit) thì chuyển sang Profile kế tiếp
-                if self.acc_used_in_session >= URLS_PER_PROFILE_SESSION or pref_credits.get("contactout", 5) <= 0:
+                # Cách 1: Mỗi Profile chạy đúng nhịp 5 URL (hoặc khi ContactOut báo thực tế đã về 0 credit) thì chuyển sang Profile kế tiếp
+                co_live = live_credits.get("contactout")
+                if self.acc_used_in_session >= URLS_PER_PROFILE_SESSION or (isinstance(co_live, int) and co_live <= 0):
+                    co_str = f"{co_live} cr" if isinstance(co_live, int) else "đọc động"
                     self.add_log(
-                        f"[*] [{acc_label}] Đã hoàn thành nhịp {self.acc_used_in_session}/{URLS_PER_PROFILE_SESSION} link (ContactOut còn {pref_credits.get('contactout', 0)}/5) -> Chuyển sang Profile kế tiếp!"
+                        f"[*] [{acc_label}] Đã hoàn thành nhịp {self.acc_used_in_session}/{URLS_PER_PROFILE_SESSION} link (ContactOut thực tế: {co_str}) -> Chuyển sang Profile kế tiếp!"
                     )
                     self.acc_exhausted = True
 
@@ -1725,9 +1688,10 @@ def rotation_worker() -> None:
                     continue
 
                 cr = acc.get("credits") or {}
-                auto_sum = sum(int(cr.get(k, 0)) for k in ["contactout", "kendo", "snov", "apollo", "lusha"])
-                if auto_sum <= 0:
-                    STATE.add_log(f"[-] Bỏ qua [{acc['name']}] vì cả 5 Extension tự động đều đã hết sạch credit.")
+                auto_keys = ["contactout", "kendo", "snov", "apollo", "lusha"]
+                # Chỉ bỏ qua Profile nếu CẢ 5 Extension tự động đều đã được đọc động và báo thực tế = 0 credit
+                if all(isinstance(cr.get(k), int) and cr.get(k) <= 0 for k in auto_keys):
+                    STATE.add_log(f"[-] Bỏ qua [{acc['name']}] vì cả 5 Extension tự động đều báo thực tế 0 credit.")
                     continue
 
                 STATE.active_acc_id = acc["id"]
@@ -2580,6 +2544,7 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
     }
 
     function badgeColorForCredit(val, maxVal) {
+      if (val === null || val === undefined) return 'background:rgba(56,189,248,0.12);color:#7dd3fc;border:1px solid rgba(56,189,248,0.3);';
       if (val <= 0) return 'background:rgba(244,85,110,0.15);color:#ff8699;border:1px solid rgba(244,85,110,0.35);';
       if (val / maxVal <= 0.25) return 'background:rgba(247,178,59,0.16);color:#fbc966;border:1px solid rgba(247,178,59,0.38);';
       return 'background:rgba(25,212,162,0.14);color:#4fe6c0;border:1px solid rgba(25,212,162,0.32);';
@@ -2587,18 +2552,19 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 
     function renderAccounts(accounts, activeAccId, manualAccId) {
       let sumCO = 0, sumKendo = 0, sumApollo = 0, sumSnov = 0, sumLusha = 0, sumSH = 0;
+      let syncedCount = 0;
       accounts.forEach(acc => {
         const cr = acc.credits || {};
-        sumCO += Number(cr.contactout ?? 5);
-        sumKendo += Number(cr.kendo ?? 50);
-        sumApollo += Number(cr.apollo ?? 80);
-        sumSnov += Number(cr.snov ?? 50);
-        sumLusha += Number(cr.lusha ?? 40);
-        sumSH += Number(cr.signalhire ?? 10);
+        if (typeof cr.contactout === 'number') { sumCO += cr.contactout; syncedCount++; }
+        if (typeof cr.kendo === 'number') sumKendo += cr.kendo;
+        if (typeof cr.apollo === 'number') sumApollo += cr.apollo;
+        if (typeof cr.snov === 'number') sumSnov += cr.snov;
+        if (typeof cr.lusha === 'number') sumLusha += cr.lusha;
+        if (typeof cr.signalhire === 'number') sumSH += cr.signalhire;
       });
 
-      document.getElementById('sumEmailText').textContent = `${sumCO} CO • ${sumLusha} Lusha`;
-      document.getElementById('sumPhoneText').textContent = `${sumKendo} Kendo • ${sumSnov} Snov • ${sumApollo} Apollo`;
+      document.getElementById('sumEmailText').textContent = syncedCount > 0 ? `${sumCO} CO • ${sumLusha} Lusha (Đọc động)` : `🔄 Tự đọc động khi mở trình duyệt`;
+      document.getElementById('sumPhoneText').textContent = syncedCount > 0 ? `${sumKendo} Kendo • ${sumSnov} Snov • ${sumApollo} Apollo` : `🔄 Đọc trực tiếp từ API / DOM / LevelDB`;
 
       const sig = JSON.stringify({ accounts, activeAccId, manualAccId });
       if (sig === lastAccountsSig) return;
@@ -2606,37 +2572,42 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 
       const grid = document.getElementById('accGrid');
       grid.innerHTML = accounts.map(acc => {
-        const cr = acc.credits || { contactout: 5, kendo: 50, apollo: 80, snov: 50, lusha: 40, signalhire: 10 };
+        const cr = acc.credits || {};
         const isRunningThis = (acc.id === activeAccId || acc.id === manualAccId);
         let statusBadge = '';
         if (acc.id === activeAccId) {
           statusBadge = `<span class="badge badge-run">⚡ Đang chạy tuần tự</span>`;
         } else if (acc.id === manualAccId) {
           statusBadge = `<span class="badge badge-run">🌐 Đang mở trình duyệt</span>`;
-        } else if ((cr.contactout || 0) <= 0) {
+        } else if (typeof cr.contactout === 'number' && cr.contactout <= 0) {
           statusBadge = `<span class="badge badge-warn">Hết CO hôm nay (Còn nguồn tháng)</span>`;
+        } else if (typeof cr.contactout === 'number') {
+          statusBadge = `<span class="badge badge-ok">Đã đồng bộ (${cr.contactout} CO)</span>`;
         } else {
-          statusBadge = `<span class="badge badge-ok">Sẵn sàng (${cr.contactout}/5 CO)</span>`;
+          statusBadge = `<span class="badge badge-ok">Sẵn sàng (Đọc credit động)</span>`;
         }
 
         const displayTitle = acc.customName || acc.holderName || acc.name;
         const apIdText = acc.adspowerId ? `AdsPower ID: <b>${acc.adspowerId}</b>` : `Local Profile: profiles/${acc.id}`;
 
         const extItems = [
-          ['contactout', 'ContactOut (Ngày)', cr.contactout ?? 5, 5],
-          ['lusha', 'Lusha (Tháng)', cr.lusha ?? 40, 40],
-          ['kendo', 'Kendo (Tháng)', cr.kendo ?? 50, 50],
-          ['snov', 'Snov.io (Tháng)', cr.snov ?? 50, 50],
-          ['apollo', 'Apollo (1E/8P)', cr.apollo ?? 80, 80],
-          ['signalhire', 'SignalHire (Tay)', cr.signalhire ?? 10, 10],
+          ['contactout', 'ContactOut', cr.contactout, 5],
+          ['lusha', 'Lusha', cr.lusha, 40],
+          ['kendo', 'Kendo', cr.kendo, 50],
+          ['snov', 'Snov.io', cr.snov, 50],
+          ['apollo', 'Apollo', cr.apollo, 80],
+          ['signalhire', 'SignalHire (Tay)', cr.signalhire, 10],
         ];
 
-        const matrixHtml = extItems.map(([key, label, val, maxV]) => `
-          <div style="padding:7px 9px;border-radius:9px;display:flex;justify-content:space-between;align-items:center;font-size:12px;${badgeColorForCredit(val, maxV)}">
-            <span style="font-weight:600;">${label}</span>
-            <b style="font-family:'JetBrains Mono',monospace;">${val}/${maxV}</b>
-          </div>
-        `).join('');
+        const matrixHtml = extItems.map(([key, label, val, maxV]) => {
+          const valText = (typeof val === 'number') ? `${val} cr` : `🔄 Đọc động`;
+          return `
+            <div style="padding:7px 9px;border-radius:9px;display:flex;justify-content:space-between;align-items:center;font-size:12px;${badgeColorForCredit(val, maxV)}">
+              <span style="font-weight:600;">${label}</span>
+              <b style="font-family:'JetBrains Mono',monospace;">${valText}</b>
+            </div>
+          `;
+        }).join('');
 
         return `
           <div class="acc-card ${isRunningThis ? 'running' : ''}">
@@ -2665,8 +2636,8 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 
             <div class="acc-actions">
               <button class="btn btn-success" onclick="setRunFirst('${acc.id}')">⭐ Chạy đầu</button>
-              <button class="btn btn-primary" onclick="openAccBrowser('${acc.id}')">🌐 Mở Trình Duyệt</button>
-              <button class="btn" onclick="editAll6Credits('${acc.id}', ${cr.contactout ?? 5}, ${cr.kendo ?? 50}, ${cr.apollo ?? 80}, ${cr.snov ?? 50}, ${cr.lusha ?? 40}, ${cr.signalhire ?? 10})">✏️ Sửa Credit</button>
+              <button class="btn btn-primary" onclick="openAccBrowser('${acc.id}')">🌐 Mở Trình Duyệt (Đọc Credit)</button>
+              <button class="btn" onclick="syncDiskCredits()">🔄 Đọc lại LevelDB</button>
             </div>
           </div>
         `;
@@ -3235,7 +3206,11 @@ class DashboardHTTPHandler(BaseHTTPRequestHandler):
                     (
                         a
                         for a in STATE.accounts
-                        if a.get("enabled", True) and int((a.get("credits") or {}).get("signalhire", 0)) > 0
+                        if a.get("enabled", True)
+                        and (
+                            (a.get("credits") or {}).get("signalhire") is None
+                            or int((a.get("credits") or {}).get("signalhire") or 0) > 0
+                        )
                     ),
                     None,
                 )

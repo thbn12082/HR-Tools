@@ -45,7 +45,11 @@ Thay vì bung source và sửa mã nguồn của cả 6 Extension riêng lẻ, d
     - Móc vào `window.fetch` và `XMLHttpRequest` để bắt trọn dữ liệu JSON trả về: tự động tách **Email Công Ty (`workEmails`)** vs **Email Cá Nhân (`personalEmails`)**, lọc **SĐT (`phones`)** và đọc số dư Credit thực tế.
   - [`hook_bridge.js`](./Argon_Collector/hook_bridge.js) & [`background.js`](./Argon_Collector/background.js): Cầu nối liên lạc giữa các iframe với `http://127.0.0.1:8765`.
   - [`linkedin_orchestrator.js`](./Argon_Collector/linkedin_orchestrator.js): Bộ điều phối trên trang `linkedin.com/in/*` kèm bảng **HUD nổi góc dưới bên trái**.
-- [`accounts_config.json`](./accounts_config.json): Sổ cái lưu cấu hình và số dư Credit của 20 Profile (`acc_1` $\rightarrow$ `acc_20`).
+- [`accounts_config.json`](./accounts_config.json): Lưu cấu hình định danh của 20 Profile (`acc_1` $\rightarrow$ `acc_20`, `adspowerId`, `gmail`, `priority`, `enabled`). **Tuyệt đối không lưu cứng số dư Credit tĩnh** — toàn bộ số dư Credit được đọc động 100% theo thời gian thực từ 3 kênh:
+  1. **API Network Interception (`hook_main.js`)**: Đọc trực tiếp các trường `credit`, `credits`, `remaining`, `balance`, `quota_left`, `{ used, limit }` trong JSON trả về của cả 6 Extension.
+  2. **Live DOM / Shadow DOM Badge Scanner (`scanDomCreditsForSource`)**: Quét trực tiếp con số hiển thị trên badge/header của từng Extension (ví dụ `"38/50 credits"`, `"42 credits left"`, `"Out of credits"`) mỗi 3.5 giây và sau mỗi lần bấm.
+  3. **LevelDB / Extension Local Storage (`read_leveldb_account_info`)**: Đọc dữ liệu thực tế lưu trong ổ đĩa của Profile.
+  - **Không bao giờ tự ý lấy số cố định trừ lùi (`-1`, `-8`) trong Python** vì có những hồ sơ không tìm thấy thông tin thì Extension không trừ credit hoặc chu kỳ hồi của từng tài khoản khác nhau.
 - [`urls.txt`](./urls.txt): Danh sách các link hồ sơ LinkedIn cần quét.
 - [`ket_qua.json`](./ket_qua.json) & [`ket_qua.csv`](./ket_qua.csv): Kết quả đầu ra đã gộp đa nguồn.
 
@@ -79,6 +83,7 @@ Thay vì bung source và sửa mã nguồn của cả 6 Extension riêng lẻ, d
 Khi bạn (Argon trên máy mới) đọc được file này sau khi `git clone https://github.com/thbn12082/HR-Tools.git`, hãy thực hiện theo đúng thứ tự sau:
 
 1. **Giữ nguyên các nguyên tắc đã chốt với Chủ nhân**:
+   - **Đọc Credit Động 100%**: Tuyệt đối không gán cứng số credit ban đầu rồi trừ lùi thủ công (`-1`, `-8`). Mọi con số credit phải được đọc động từ API trả về, từ DOM giao diện của Extension hoặc từ LevelDB.
    - Không viết lại code spoof fingerprint trong extension (AdsPower đã lo).
    - Không đổi sang chạy đa luồng/song song nhiều trình duyệt cùng lúc (vì đang dùng mạng công ty 1 IP).
    - Tuyệt đối không cho `SignalHire` tự động bấm trong mọi trường hợp.
