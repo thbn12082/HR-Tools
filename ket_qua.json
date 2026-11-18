@@ -1,0 +1,686 @@
+[
+  {
+    "timestamp": "2026-11-16 08:25:56",
+    "accountId": "acc_3",
+    "account": "Lê Minh Khải (acc_3)",
+    "fullName": "Bill Gates",
+    "company": "",
+    "headline": "Sign in to view Bill’s full profile",
+    "uiEmails": [
+      "raisreading@gmail.com",
+      "criptych@gmail.com",
+      "trweissen@gmail.com",
+      "billygates@gmail.com",
+      "bill@gatesfoundation.org"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "raisreading@gmail.com",
+      "criptych@gmail.com",
+      "trweissen@gmail.com",
+      "billygates@gmail.com",
+      "bill@gatesfoundation.org"
+    ],
+    "phones": [
+      "+12067093100"
+    ],
+    "github": [
+      "https://github.com/criptych"
+    ],
+    "twitter": [
+      "https://x.com/raisreading",
+      "https://x.com/criptych",
+      "https://x.com/billygates"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/williamhgates/"
+  },
+  {
+    "timestamp": "2026-11-16 08:19:41",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "SOUMYA RANJAN DAS",
+    "company": "",
+    "headline": "MTS @ GLOBALFOUNDRIES|PDK Development in EDA/Foundry/IDM|Validation|Automation|CAD & AMS Flow|Project Lead |Collaborator|QA|Complex ProblemSolving & Debugging|Power BI Data Insight/Dashboard dev Skill |Adv 3D IC|Driving",
+    "uiEmails": [
+      "soumyaranjandas@yahoo.com",
+      "soumya.das@globalfoundries.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "soumyaranjandas@yahoo.com",
+      "soumya.das@globalfoundries.com"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [
+      "https://x.com/soumyaranjandas",
+      "https://x.com/soumyadas"
+    ],
+    "openalex": "https://openalex.org/authors/A5102007035",
+    "orcid": "https://orcid.org/0000-0002-5834-2287",
+    "liUrl": "https://www.linkedin.com/in/soumya-ranjan-das-38814b28/"
+  },
+  {
+    "timestamp": "2026-11-16 08:18:17",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Thiruvenkata S",
+    "company": "",
+    "headline": "Greater Bengaluru Area",
+    "uiEmails": [],
+    "secondaryEmails": [],
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/thiruvenkata/"
+  },
+  {
+    "timestamp": "2026-11-16 08:17:39",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Gurpreet Singh Lamba",
+    "company": "",
+    "headline": "Senior Manager,. Siemens | VLSI  | Semiconductor Design and Manufacturing | Physical Design & Physical Verification | Product Manager | Pre-Sales | Customer Success | Growth Mindset | Strategist | Digital Transformation",
+    "uiEmails": [
+      "gurpreet85@gmail.com",
+      "gurpreet_lamba@mentor.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "gurpreet85@gmail.com",
+      "gurpreet_lamba@mentor.com"
+    ],
+    "phones": [
+      "+919686654456"
+    ],
+    "github": [
+      "https://github.com/gurpreet85-harjap"
+    ],
+    "twitter": [
+      "https://x.com/gurpreet85",
+      "https://x.com/gurpreetlamba"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/gurpreetlamba/"
+  },
+  {
+    "timestamp": "2026-11-16 08:16:24",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Liyakat Mulani",
+    "company": "",
+    "headline": "PDK Engineer at Samsung R&D",
+    "uiEmails": [
+      "liya786lm@gmail.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "liya786lm@gmail.com"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/liyakat-mulani-523024128/"
+  },
+  {
+    "timestamp": "2026-11-16 08:36:22",
+    "accountId": "acc_3",
+    "account": "Lê Minh Khải (acc_3)",
+    "fullName": "Namchul Chi",
+    "company": "",
+    "headline": "Member of Technical Staff at GLOBALFOUNDRIES",
+    "uiEmails": [],
+    "secondaryEmails": [],
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/namchul-chi-903a5617/"
+  },
+  {
+    "timestamp": "2026-11-13 17:26:28",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Ken Hung",
+    "company": "",
+    "headline": "Milpitas, California, United States",
+    "uiEmails": [
+      "kennhung@gmail.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "kennhung@gmail.com"
+    ],
+    "phones": [
+      "+14153091372"
+    ],
+    "github": [],
+    "twitter": [
+      "https://x.com/kennhung"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/ken-hung-4852b6a/"
+  },
+  {
+    "timestamp": "2026-11-13 17:25:53",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Fathima Humaira Abdul Hameed",
+    "company": "",
+    "headline": "PDK Development | Photonic Layout",
+    "uiEmails": [
+      "fatimakid2006@gmail.com",
+      "fathimakid2006@gmail.com",
+      "fathimahumairaa@gmail.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "fatimakid2006@gmail.com",
+      "fathimakid2006@gmail.com",
+      "fathimahumairaa@gmail.com"
+    ],
+    "phones": [
+      "+18048749366",
+      "+14242004223"
+    ],
+    "github": [],
+    "twitter": [
+      "https://x.com/fathimahumairaa"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/fathima-humaira-abdul-hameed-b6708a73/"
+  },
+  {
+    "timestamp": "2026-11-13 17:23:10",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Thomas Leong",
+    "company": "",
+    "headline": "Manager Mainstream PDK  at GLOBALFOUNDRIES",
+    "uiEmails": [],
+    "secondaryEmails": [],
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/thomleong/"
+  },
+  {
+    "timestamp": "2026-11-13 17:16:48",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Shruthi LS",
+    "company": "",
+    "headline": "EDA Tool Development | PDK Development | AMS Layout Design | Design Flow Automation | VLSI | Semiconductors | Silicon",
+    "uiEmails": [
+      "shruthilshivanna@gmail.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "shruthilshivanna@gmail.com"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/shruthils/"
+  },
+  {
+    "timestamp": "2026-11-13 17:16:14",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Petko Tsanov",
+    "company": "",
+    "headline": "Principal Engineer Design Enablement at GlobalFoundries",
+    "uiEmails": [
+      "tsanov.p@abv.bg"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "tsanov.p@abv.bg"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [
+      "https://x.com/tsanovp"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/petko-tsanov/"
+  },
+  {
+    "timestamp": "2026-11-13 17:15:34",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Sabita Haldar PMP",
+    "company": "",
+    "headline": "Bengaluru, Karnataka, India",
+    "uiEmails": [
+      "sabita_haldar@hotmail.com",
+      "sabita.haldar@renesas.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "sabita_haldar@hotmail.com",
+      "sabita.haldar@renesas.com"
+    ],
+    "phones": [
+      "+15124573900"
+    ],
+    "github": [],
+    "twitter": [
+      "https://x.com/sabita_haldar",
+      "https://x.com/sabitahaldar"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/sabita-haldar/"
+  },
+  {
+    "timestamp": "2026-11-13 17:14:51",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Nidhi Upadhyay",
+    "company": "",
+    "headline": "PDK Validation Engineer | EDA Flows | Physical Verification | M.Tech Microelectronics (BITS Pilani) | VLSI | Semiconductor",
+    "uiEmails": [
+      "nidhi.upadhyay@tessolve.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "nidhi.upadhyay@tessolve.com"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [
+      "https://x.com/nidhiupadhyay"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/nidhiupadhyay09/"
+  },
+  {
+    "timestamp": "2026-11-13 17:11:59",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Jill Go",
+    "company": "",
+    "headline": "Senior Staff PDK Engineer",
+    "uiEmails": [
+      "jill.go@infineon.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "jill.go@infineon.com"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [
+      "https://x.com/jillgo"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/jill-go-9515b989/"
+  },
+  {
+    "timestamp": "2026-11-13 10:41:25",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Loan Nguyen",
+    "company": "",
+    "headline": "Smollan is looking for talented individuals to join our Retail & Field Marketing team",
+    "uiEmails": [
+      "nguyenl@smollan.co.za"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "nguyenl@smollan.co.za"
+    ],
+    "phones": [],
+    "github": [],
+    "twitter": [
+      "https://x.com/nguyenl"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "https://www.linkedin.com/in/nguyenloanld0312/"
+  },
+  {
+    "timestamp": "2026-11-13 09:58:09",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Deckers Outdoor Vietnam Recruitment",
+    "company": "",
+    "headline": "Talent Acquisition tại Deckers Outdoor Vietnam Co.,Ltd",
+    "uiEmails": [],
+    "secondaryEmails": [],
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/deckers-outdoor-vietnam-recruitment-420081424/",
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-13 08:36:09",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Feed",
+    "company": "",
+    "headline": "",
+    "uiEmails": [],
+    "secondaryEmails": [],
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/feed/",
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-13 08:35:58",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Lê Minh Hoàng",
+    "company": "",
+    "headline": "Student at Viện Quản trị & Công nghệ FSB, Trường Đại học FPT",
+    "uiEmails": [],
+    "secondaryEmails": [],
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/l/",
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-12 14:41:50",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Liesl Cohn",
+    "company": "",
+    "headline": "Antropóloga | Investigadora y profesora universitaria | Fulbright Scholar",
+    "emails": [],
+    "phones": [],
+    "uiEmails": [],
+    "uncertainEmails": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/liesl-cohn-11047a79/",
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-12 14:37:46",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "HAERANG YOO",
+    "company": "",
+    "headline": "Emotion Alchemist | Founder, Lucete AI Lab",
+    "emails": [],
+    "phones": [],
+    "uiEmails": [],
+    "uncertainEmails": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/haerang-yoo-20298038a/",
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-12 16:21:58",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Dongil Lee",
+    "company": "Micron",
+    "headline": "3D NAND Device Engineer at Micron",
+    "uiEmails": [
+      "cooki5001@gmail.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "cooki5001@gmail.com"
+    ],
+    "phones": [
+      "+14084625571",
+      "+16179993238"
+    ],
+    "github": [
+      "https://github.com/cooki5001"
+    ],
+    "liUrl": "https://www.linkedin.com/in/dongil-lee/",
+    "twitter": [
+      "https://x.com/cooki5001"
+    ],
+    "openalex": "https://openalex.org/A5045684870",
+    "orcid": "https://orcid.org/0000-0001-6678-5451"
+  },
+  {
+    "timestamp": "2026-11-11 14:34:17",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Sooraj Sanjay",
+    "company": "Intel",
+    "headline": "Integration Engineer at Intel | R&D Semiconductor Devices | Nanofabrication & Process Integration | 2-D materials and Oxides",
+    "emails": [
+      "soorajsanjay@gmail.com",
+      "sooraj.sanjay@intel.com"
+    ],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/soorajsanjay/",
+    "uiEmails": [
+      "soorajsanjay@gmail.com",
+      "sooraj.sanjay@intel.com"
+    ],
+    "uncertainEmails": [],
+    "twitter": [
+      "https://x.com/soorajsanjay"
+    ],
+    "openalex": "https://openalex.org/authors/A5021488183",
+    "orcid": "https://orcid.org/0000-0003-4252-4817"
+  },
+  {
+    "timestamp": "2026-11-11 14:33:01",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Konstantin Loiko",
+    "company": "Tata Electronics",
+    "headline": "Highly Accomplished Device Engineer | TCAD, NVM, and CIS Expert",
+    "emails": [
+      "loiko@hotmail.com",
+      "konstantin.loiko@tataelectronics.com"
+    ],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/konstantinloiko/",
+    "uiEmails": [
+      "loiko@hotmail.com",
+      "konstantin.loiko@tataelectronics.com"
+    ],
+    "uncertainEmails": [],
+    "twitter": [
+      "https://x.com/loiko"
+    ],
+    "openalex": "https://openalex.org/authors/A5046747043",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-11 14:01:02",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Hyunsoo Lee",
+    "company": "ATD",
+    "headline": "GaN Device/Process integration engineer at ATD",
+    "emails": [
+      "leehs6779@gmail.com"
+    ],
+    "phones": [
+      "+16149664931"
+    ],
+    "github": [
+      "https://github.com/leehs6779"
+    ],
+    "liUrl": "https://www.linkedin.com/in/hyunsoo-lee-0359841aa/",
+    "uiEmails": [
+      "leehs6779@gmail.com"
+    ],
+    "uncertainEmails": [],
+    "twitter": [],
+    "openalex": "https://openalex.org/authors/A5017574508",
+    "orcid": "https://orcid.org/0000-0001-6235-9199"
+  },
+  {
+    "timestamp": "2026-11-13 10:39:00",
+    "accountId": "acc_main",
+    "account": "Lê Minh Khải (acc_main)",
+    "fullName": "Kyungminlee42",
+    "company": "",
+    "headline": "TCAD Engineer",
+    "uiEmails": [
+      "kyungminlee42@gmail.com"
+    ],
+    "secondaryEmails": [],
+    "emails": [
+      "kyungminlee42@gmail.com"
+    ],
+    "phones": [],
+    "github": [
+      "https://github.com/kyungminlee42"
+    ],
+    "twitter": [
+      "https://x.com/kyungminlee42"
+    ],
+    "openalex": "",
+    "orcid": "",
+    "liUrl": "kyungminlee42"
+  },
+  {
+    "timestamp": "2026-11-10 16:26:31",
+    "accountId": "acc_3",
+    "account": "Lê Minh Khải (acc_3)",
+    "fullName": "Yu-Chung Lai",
+    "company": "TSMC",
+    "headline": "登入查看Yu-Chung (Duncan)的完整檔案",
+    "emails": [
+      "duncanyuchunglai@gmail.com",
+      "duncan.me95@g2.nctu.edu.tw",
+      "yuchung_lai@tsmc.com"
+    ],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/duncan-lai/",
+    "uiEmails": [
+      "duncanyuchunglai@gmail.com",
+      "duncan.me95@g2.nctu.edu.tw",
+      "yuchung_lai@tsmc.com"
+    ],
+    "uncertainEmails": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-09 16:19:44",
+    "accountId": "acc_2",
+    "account": "Lê Minh Hoàng (acc_2)",
+    "fullName": "Anuja S.",
+    "company": "",
+    "headline": "Sign in to view Anuja’s full profile",
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/anuja-s-74160769/",
+    "uiEmails": [],
+    "uncertainEmails": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-09 16:18:51",
+    "accountId": "acc_1",
+    "account": "Bình Nguyễn Thế (acc_1)",
+    "fullName": "Wei Syuan Lin",
+    "company": "",
+    "headline": "登入查看Wei Syuan的完整檔案",
+    "emails": [],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/wei-syuan-lin-576868205/",
+    "uiEmails": [],
+    "uncertainEmails": [],
+    "twitter": [],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-09 13:49:59",
+    "accountId": "acc_2",
+    "account": "Tài khoản 2",
+    "fullName": "Meng Hsuan Ke",
+    "company": "Apple",
+    "headline": "登入查看Meng Hsuan的完整檔案",
+    "emails": [
+      "flowstar0620@gmail.com",
+      "mke@apple.com"
+    ],
+    "phones": [],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/meng-hsuan-ke-97917a9a/",
+    "uiEmails": [
+      "flowstar0620@gmail.com",
+      "mke@apple.com"
+    ],
+    "uncertainEmails": [],
+    "twitter": [
+      "https://x.com/flowstar0620"
+    ],
+    "openalex": "",
+    "orcid": ""
+  },
+  {
+    "timestamp": "2026-11-09T04:55:39.734Z",
+    "accountId": "acc_1",
+    "account": "acc_1",
+    "fullName": "Bing Han",
+    "company": "EMD Group",
+    "headline": "Einloggen, um das vollständige Profil von Bing Han zu sehen",
+    "emails": [
+      "bing.han@emdgroup.com"
+    ],
+    "phones": [
+      "+14846293595"
+    ],
+    "github": [],
+    "liUrl": "https://www.linkedin.com/in/bing-han-ab725015/",
+    "uiEmails": [
+      "bing.han@emdgroup.com"
+    ],
+    "uncertainEmails": [],
+    "secondaryEmails": [],
+    "twitter": [
+      "https://x.com/binghan"
+    ],
+    "openalex": "",
+    "orcid": ""
+  }
+]

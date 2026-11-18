@@ -1,0 +1,3 @@
+https://github.com/thbn12082/HR-Tools.git
+
+đẩy dự án lên đây và viết file md để 1 con argon trên máy khác hiểu về dự án này và các dữ kiện xung quanh ( các công cụ ta đang dung và cho nó biết nó nên làm gì) 

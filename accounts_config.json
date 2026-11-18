@@ -1,0 +1,342 @@
+{
+  "acc_1": {
+    "enabled": true,
+    "priority": 1,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_01@gmail.com",
+    "name": "AdsPower #01",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_2": {
+    "enabled": true,
+    "priority": 2,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_02@gmail.com",
+    "name": "AdsPower #02",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_3": {
+    "enabled": true,
+    "priority": 3,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_03@gmail.com",
+    "name": "AdsPower #03",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_4": {
+    "enabled": true,
+    "priority": 4,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_04@gmail.com",
+    "name": "AdsPower #04",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_5": {
+    "enabled": true,
+    "priority": 5,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_05@gmail.com",
+    "name": "AdsPower #05",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_6": {
+    "enabled": true,
+    "priority": 6,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_06@gmail.com",
+    "name": "AdsPower #06",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_7": {
+    "enabled": true,
+    "priority": 7,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_07@gmail.com",
+    "name": "AdsPower #07",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_8": {
+    "enabled": true,
+    "priority": 8,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_08@gmail.com",
+    "name": "AdsPower #08",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_9": {
+    "enabled": true,
+    "priority": 9,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_09@gmail.com",
+    "name": "AdsPower #09",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_10": {
+    "enabled": true,
+    "priority": 10,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_10@gmail.com",
+    "name": "AdsPower #10",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_11": {
+    "enabled": true,
+    "priority": 11,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_11@gmail.com",
+    "name": "AdsPower #11",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_12": {
+    "enabled": true,
+    "priority": 12,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_12@gmail.com",
+    "name": "AdsPower #12",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_13": {
+    "enabled": true,
+    "priority": 13,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_13@gmail.com",
+    "name": "AdsPower #13",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_14": {
+    "enabled": true,
+    "priority": 14,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_14@gmail.com",
+    "name": "AdsPower #14",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_15": {
+    "enabled": true,
+    "priority": 15,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_15@gmail.com",
+    "name": "AdsPower #15",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_16": {
+    "enabled": true,
+    "priority": 16,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_16@gmail.com",
+    "name": "AdsPower #16",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_17": {
+    "enabled": true,
+    "priority": 17,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_17@gmail.com",
+    "name": "AdsPower #17",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_18": {
+    "enabled": true,
+    "priority": 18,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_18@gmail.com",
+    "name": "AdsPower #18",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_19": {
+    "enabled": true,
+    "priority": 19,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_19@gmail.com",
+    "name": "AdsPower #19",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  },
+  "acc_20": {
+    "enabled": true,
+    "priority": 20,
+    "proxy": "",
+    "adspowerId": "",
+    "gmail": "gmail_20@gmail.com",
+    "name": "AdsPower #20",
+    "lastDailyReset": "2026-11-18",
+    "credits": {
+      "contactout": 5,
+      "kendo": 50,
+      "apollo": 80,
+      "snov": 50,
+      "lusha": 40,
+      "signalhire": 10
+    }
+  }
+}

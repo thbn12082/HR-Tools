@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Argon Multi-Extension Collector & Orchestrator",
+  "short_name": "Argon_Collector",
+  "version": "2.0.0",
+  "description": "Điều phối động 6 Extension (ContactOut, Kendo, Apollo, Snov.io, Lusha, SignalHire) trên AdsPower & gộp dữ liệu về 127.0.0.1:8765",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "webNavigation",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["hook_main.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["hook_bridge.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "ISOLATED"
+    },
+    {
+      "matches": [
+        "*://*.linkedin.com/in/*",
+        "*://*.linkedin.com/pub/*",
+        "*://*.linkedin.com/sales/*",
+        "*://*.linkedin.com/talent/*"
+      ],
+      "js": ["linkedin_orchestrator.js"],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "world": "ISOLATED"
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+﻿#,Họ tên,Điểm khớp JD,Vị trí hiện tại,Headline,Địa điểm / liên hệ Việt Nam,Số năm KN,Kinh nghiệm (chức vụ — công ty — thời gian),Kỹ năng,Điểm mạnh (bằng chứng),Cảnh báo,LinkedIn,Email,SĐT
+1,Namchul Chi,55.2,"Member of Technical Staff, Design Enablement @ GLOBALFOUNDRIES",Member of Technical Staff at GLOBALFOUNDRIES,"Ở nước ngoài (Pleasanton, California, United States)",36.7,"Member of Technical Staff, Design Enablement — GLOBALFOUNDRIES (11/2014 – nay)
+Library & PDK Development Principle Engineer — UNIVE, Inc. (04/2008 – 10/2014)
+PDK Development Senior Engineer — MagnaChip Semiconductor (11/2004 – 03/2008)
+Design Kit Development Senior Engineer — SK hynix (08/1999 – 10/2004)
+Design Kit Development Assistant Engineer — LG Semicon (01/1995 – 07/1999)
+CAD Engineer — LG Semicon (04/1990 – 12/1994)","DRC, Physical Design, Static Timing Analysis, ASIC Library Development, Linux, Gate Level Simulation, Formal Verification, Process Design Kit Development, Knowledge of EDA/CAD Tools, Programming & Scripting languages: C, SKILL, Tcl, Perl, Awk, Shell, Make, Digital IP Characterization, Digital IP Modeling, Physical Design Verification: DRC, LVS, RCX, Circuit Level Simulation, Library Validation","Kiến trúc & phát triển PDK: ""Member of Technical Staff, Design Enablement""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""- Implemented ESD checking rule deck using Calibre DRC/LVS.""
+Tương quan kết quả với dữ liệu silicon: ""- Completed 0.35um test chip development project at Cadence in San Diego.""
+iPDK / OpenAccess / PyCells: ""- Implemented Pcell templates and CDF callbacks.""
+Làm việc & đánh giá EDA vendor: ""- Evaluated and utilized Cadence’s PDK Automation System(PAS) and System for Testing PDKs(STeP) to improve PDK developme""",Không rõ bằng cấp,https://www.linkedin.com/in/namchul-chi-903a5617/,,
+2,Jill Go,52.9,Senior Staff Engineer @ Infineon Technologies,Senior Staff PDK Engineer,Ở nước ngoài (Austria),15.9,"Senior Staff Engineer — Infineon Technologies (03/2024 – nay)
+Staff CAD Engineer — MediaTek (05/2022 – 11/2023)
+Principal Engineer Design Enablement — GLOBALFOUNDRIES (06/2019 – 04/2022)
+Layout Engineer — Marvell Technology (06/2014 – 06/2018)
+Assistant LSI Development Engineer — ROHM LSI Design Philippines, Inc. (09/2010 – 03/2014)
+System Engineer — Luxpia Electronics Corporation (09/2009 – 09/2010)","Embedded Systems, Standard Cell, Synopsys tools, Layout, Characterization, Dracula, LVS, DRC, Verification, Cadence Virtuoso, Cadence Spectre, OrCAD Capture CIS, Behavioral Modeling, Simulations, Pspice, Multisim, IC, Verilog, Cadence, Analog, Semiconductors","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""Handles LVS rule file development and provide LVS supports to Design and Layout Engineers""
+Làm việc & đánh giá EDA vendor: ""- Develop process design kit (PDK) and modify LVS runsets using major tools such as Calibre, PVS, and Synopsys used by c""
+Kiến trúc & phát triển PDK: ""Principal Engineer Design Enablement""
+Trích xuất ký sinh PEX & field solver: ""- Perform integration testing with design library / DRC / LVS / PEX / Spice Model to ensure proper integration of proces""
+Kiểm tra ESD & latch-up: ""- Run and debugs LVS and different DRC checks such as antenna, density, latch-up, esd latch-up and stress from sub-block""",,https://www.linkedin.com/in/jill-go-9515b989/,jill.go@infineon.com,
+3,Nidhi Upadhyay,51.5,PDK Engineer @ Tessolve,PDK Validation Engineer | EDA Flows | Physical Verification | M.Tech Microelectronics (BITS Pilani) | VLSI | Semiconductor,"Ở nước ngoài (Bengaluru, Karnataka, India)",5.7,"PDK Engineer — Tessolve (04/2025 – nay)
+PDK Validation Engineer — Incise Infotech Private Limited (11/2021 – 03/2025)
+Advanced diploma in ASIC Design- Physical Design — RV VLSI Design Centre (03/2021 – 09/2021)","PDK Validation, TechLEF Validation, Abstract Generator Flow, RC Extraction, ESRA, EMIR, PCell Testcase, Layout Versus Schematic (LVS), Process Design Kit Validation, PDK, Methodology Rule Check (MRC), Timing Closure, PNR, Clock Tree Synthesis (CTS), Electrical Rule Check (ERC), Physical Verification, Unix, Place & Route, Design Rule Checking (DRC), Very-Large-Scale Integration (VLSI), Digital Electronics, Physical Design, Printed Circuit Board (PCB) Design, Scripting, Shell Scripting, Routing, Electrical Engineering, Perl, Embedded Systems, C (+20)","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""• Generated parameterized cell layouts (PCells) in Cadence Virtuoso, ensuring compliance with foundry DRC/LVS rules usin""
+Trích xuất ký sinh PEX & field solver: ""• Verified TechLEF and Tech files using EDA tools including Cadence Innovus, ICC2, Quantus, StarRC, Voltus, Redhawk, Abs""
+iPDK / OpenAccess / PyCells: ""• Generated parameterized cell layouts (PCells) in Cadence Virtuoso, ensuring compliance with foundry DRC/LVS rules usin""
+Làm việc & đánh giá EDA vendor: ""• Verified TechLEF and Tech files using EDA tools including Cadence Innovus, ICC2, Quantus, StarRC, Voltus, Redhawk, Abs""
+Kiến trúc & phát triển PDK: ""• Validating Process Design Kits (PDKs) to meet Intel's design standards, ensuring accuracy and efficiency.""","Kinh nghiệm 5.7 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/nidhiupadhyay09/,nidhi.upadhyay@tessolve.com,
+4,Sabita Haldar PMP,49.7,Sr Program Manager @ Renesas Electronics,"Program Manager | Semiconductor NPD/NPI & Product Development | GaN Power | SoC, IP, PDK & Design Enablement | Global Cross-Functional Leadership | PMP","Ở nước ngoài (Bengaluru, Karnataka, India)",21.8,"Sr Program Manager — Renesas Electronics (03/2026 – nay)
+Sr Program Manager -- Semiconductor NPI & PDK Development — GlobalFoundries (06/2020 – 01/2025)
+Program Manager -- PDK Release & Design Enablement — GlobalFoundries (01/2017 – 06/2020)
+Sr Staff Engineer -- IP Automation & Regression Flow — Qualcomm (07/2016 – 11/2016)
+Principal Design Engg -- Semiconductor IP & PDK Integration — Microchip Technology (08/2012 – 06/2016)
+Assistant Consultant -- VLSI Backend Design — TCS (02/2007 – 07/2012)
+Senior Design Engineer -- RF antenna & circuit — GE Healthcare (2006 – 2007)
+Individual Contributor 'C' -- EDA enablement — Agilent Technologies (2004 – 2006)","Program Implementation, Program Management, Semiconductor Industry, Cross-functional Team Leadership, Physical Verification, Microsoft Excel, Microsoft Power BI, Perforce, Project Management, Verification and Validation (V&V), Cadence Software, EDA tools, Verilog, Agilent ADS, IC, RF, ASIC, RTL design, SoC, VLSI, Embedded Systems, Debugging, Cadence Virtuoso, Integrated Circuit Design, TCL, SystemVerilog, C, Simulations, Perl, EDA (+5)","Kiến trúc & phát triển PDK: ""Sr Program Manager -- Semiconductor NPI & PDK Development""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""• Enabled accurate and efficient physical verification by implementing vendor PDKs from TSMC, GF, and others, and custom""
+Làm việc & đánh giá EDA vendor: ""Agilent ADS and Cadence Software""",,https://www.linkedin.com/in/sabita-haldar/,"sabita_haldar@hotmail.com, sabita.haldar@renesas.com",+15124573900
+5,Liyakat Mulani,48.3,Senior Staff Engineer @ Samsung Semiconductor,PDK Engineer at Samsung R&D,"Ở nước ngoài (Bangalore Urban, Karnataka, India)",9.1,"Senior Staff Engineer — Samsung Semiconductor (08/2025 – nay)
+Staff PDK Engineer — Infineon Technologies (11/2022 – 07/2025)
+Staff PDK Engineer — Infineon Technologies (01/2022 – 11/2022)
+Sr PDK Engineer — Infineon Technologies (11/2019 – 01/2022)
+PDK/CAD Engineer — Sankalp Semiconductor (11/2017 – 11/2019)","Jira, Integrated Systems, German, Version Control Tools, JSON, VHDL, PDK Development, Analog layout, VLSI CAD, Shell Scripting, Computer-Aided Design (CAD), Analog Circuit Design, Python, Linux, Perl, Microsoft Office, Red Hat Linux, Pycell development, TCL, Cadence Virtuoso, skill, Layout Versus Schematic (LVS), Design Rule Checking (DRC), Calibre rule writing., Analog CAD, PCell Development, EDA, Physical Verification, Cadence Spectre, Unix (+23)","iPDK / OpenAccess / PyCells: ""PDK Development. DRC, LVS, PERC rule development. Pcell/ device library development""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""PDK Development · svrf""
+Kiến trúc & phát triển PDK: ""PDK Development. DRC, LVS, PERC rule development. Pcell/ device library development""",Kinh nghiệm 9.1 năm < yêu cầu 15 năm,https://www.linkedin.com/in/liyakat-mulani-523024128/,liya786lm@gmail.com,
+6,Petko Tsanov,46.2,Principal Engineer Design Enablement @ GlobalFoundries,Principal Engineer Design Enablement at GlobalFoundries,Ở nước ngoài (Bulgaria),9.8,"Principal Engineer Design Enablement — GlobalFoundries (09/2026 – nay)
+Research & Development Engineer — Danlex (01/2025 – 05/2026)
+Principal Engineer Design Enablement — GLOBALFOUNDRIES (07/2021 – 06/2023)
+Senior Engineer Design Enablement — GLOBALFOUNDRIES (07/2020 – 07/2021)
+Senior Engineer Design Enablement — GLOBALFOUNDRIES (12/2019 – 07/2020)
+Software Engineer, PERC Deck Developer — Smartcom Bulgaria AD (06/2015 – 12/2019)
+Intern — Smartcom Bulgaria AD (04/2015 – 06/2015)","Deep Learning, PyTorch, Optical Character Recognition (OCR), Image Processing, Image Segmentation, PERC, LVS, TCL, Semiconductors, Software Development, Machine Learning, Testing, Electronics, Physics, Programming, Debugging, Python, Pandas (Software), Red Hat Linux, Linux, Cadence Virtuoso, Scikit-Learn, Data Science, OrCAD, Mentor Graphic - Calibre","Kiến trúc & phát triển PDK: ""Principal Engineer Design Enablement""
+Lập trình Tcl / Python cho flow: ""…ed the generation time of Voltus/Voltus-Fi EM/IR tech files by 50% by building Python-based tools and an SQLite databas""
+Kiểm tra ESD & latch-up: ""…e, impedance mismatch) through optimized layer stack-up, ground plane partitioning, and strategic placement of ESD prot""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""PDK development · software development · TCL · SVRF · Siemens PERC/PERC-LDL/LVS · ESD · Cadence Virtuoso · debugging · t""
+Làm việc & đánh giá EDA vendor: ""PDK development · Software development · Cadence Voltus/Voltus-Fi/Virtuoso · Python · SQLite · debugging · testing.""",Kinh nghiệm 9.8 năm < yêu cầu 15 năm,https://www.linkedin.com/in/petko-tsanov/,tsanov.p@abv.bg,
+7,Gurpreet Singh Lamba,45.9,Senior Technical Manager / Solution Group Leader India @ Siemens EDA (Siemens Digital Industries Software),"Senior Manager,. Siemens | VLSI | Semiconductor Design and Manufacturing | Physical Design & Physical Verification | Product Manager | Pre-Sales | Customer Success | Growth Mindset | Strategist | Digital Transformation","Ở nước ngoài (Bengaluru, Karnataka, India)",17.5,"Senior Technical Manager / Solution Group Leader India — Siemens EDA (Siemens Digital Industries Software) (01/2024 – nay)
+Technical Manager — Siemens EDA (Siemens Digital Industries Software) (01/2021 – 01/2024)
+Senior Consultant — Siemens EDA (Siemens Digital Industries Software) (04/2019 – 01/2021)
+Senior Application Engineer — Mentor Graphics (02/2017 – 04/2019)
+Corporate Application Engineer — Mentor Graphics (04/2015 – 04/2017)
+Product Specialist — Mentor Graphics (02/2013 – 04/2015)
+Senior Product Engineer — Synopsys (02/2012 – 01/2013)
+Product Engineer — Magma Design Automation (01/2010 – 03/2012)
+… và 3 vị trí khác","Wavelength-Division Multiplexing (WDM), Wave Propagation, Strategic Planning, RFID Applications, Robotics, Electromagnetic Interference (EMI), Foundry Management, Metrology, Silicon Photonics, TCAD, characterization, Semiconductor Fabrication, computational litho, Data Analysis, Application Engineers, Leadership, Sales Management, Engineering, Customer Relationship Management (CRM), Direct Sales, International Sales, Integration, Application Programming, Application Development, Sales & Marketing, Product Development, Marketing, Business Development, VLSI CAD, Sales (+28)","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""-Working on ICV Physical Verification. Expertise in DRC and FILL.""
+Lập trình Tcl / Python cho flow: ""-Develop QA flows to validate different physical verification tasks using scripting language like PERL/TCL/Shell/Skill e""
+Trích xuất ký sinh PEX & field solver: ""-Enable Physical Verification Solution such as DRC,LVS,ERC,PERC,MAS, FILL, DPT, TPT,QPT(MPT) and PEX etc. for different """,,https://www.linkedin.com/in/gurpreetlamba/,"gurpreet85@gmail.com, gurpreet_lamba@mentor.com",+919686654456
+8,Shruthi LS,42.7,Lead Automation Engineer @ LeadSoc Technologies Pvt Ltd,EDA Tool Development | PDK Development | AMS Layout Design | Design Flow Automation | VLSI | Semiconductors | Silicon,"Ở nước ngoài (Bengaluru, Karnataka, India)",10.7,"Lead Automation Engineer — LeadSoc Technologies Pvt Ltd (12/2024 – nay)
+Technical Lead — HCLTech (08/2023 – 12/2024)
+Senior Engineer - R&D — Pravarta Labs LLP (07/2019 – 07/2023)
+Engineer R&D — Pravarta Labs LLP (10/2017 – 06/2019)
+Freelance Tutor (04/2016 – 09/2017)
+Research Intern — Raman Research Institute (07/2015 – 01/2016)","PDK Development, EDA Tool Development, Analog and Mixed Signal Layout Design, Cadence Virtuoso, Cadence Software, Qt Creator, Jira, Git, Floorplanning, Layout Versus Schematic (LVS), Design Rule Checking (DRC), Linux, Embedded Systems, Verilog","Lập trình Tcl / Python cho flow: ""• Ensuring correctness of Standard Cell IP/GPIO Libraries by comparing OA and- GDS using LVL, LVS & SVS checks with SKIL""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""• Developed Physical Verification Design Rule Deck using SVRF (Standard Verification Rule Format) In Assura and PVS.""
+iPDK / OpenAccess / PyCells: ""• Developed LDMOS PCELLS with CDF and CDF callback using SKILL scripts.""
+Mô hình hóa LDE (layout-dependent effects): ""• Gained good understanding in the issues of Electromigration and IR drop, Antenna effect, Latch up, ESD and advance pro""
+Kiểm tra ESD & latch-up: ""• Gained good understanding in the issues of Electromigration and IR drop, Antenna effect, Latch up, ESD and advance pro""",,https://www.linkedin.com/in/shruthils/,shruthilshivanna@gmail.com,
+9,Thiruvenkata G S,42.5,Senior AMS PDK Designer @ HCLTech,PDK Engineer,Ở nước ngoài (Greater Bengaluru Area),1.8,"Senior AMS PDK Designer — HCLTech (08/2026 – nay)
+Jr. PDK Engineer — Pravarta Labs LLP (02/2025 – 06/2026)
+PDK Engineer - Trainee — Pravarta Labs LLP (08/2024 – 02/2025)","PVRF, SVRF, Cadence Virtuoso, SKILL, Design Rule Checking (DRC), Layout Versus Schematic (LVS), TCL, Bash, Git, Verilog HDL, Python (Programming Language), Mentor Graphics, Illustration, Photoshop, Digital Illustration, Graphic Design, Adobe Premiere Pro, Xilinx ISE, Model Sim, Adobe Illustrator, Xilinx Vivado, Embedded Systems, Verilog, MATLAB, NI Multisim, After Effects","iPDK / OpenAccess / PyCells: ""PCell development - BCDMOS 180nm PDK (MOS, DeMOS, LDMOS, capacitors, resistors, BJT).""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""DRC & LVS rule deck development - BCDMOS 180nm PDK (layer definition, layer mapping, layer Boolean operations, device ex""
+Trích xuất ký sinh PEX & field solver: ""Calibre PERC run, Calibre PEX run, EMIR analysis using Voltus-XFi.""
+Làm việc & đánh giá EDA vendor: ""Basics of Cadence SKILL, Bash commands, and Git commands.""
+Kiến trúc & phát triển PDK: ""PDK Development:""","Kinh nghiệm 1.8 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/thiruvenkata/,,
+10,SOUMYA RANJAN DAS,37.7,Member Of Technical Staff @ GLOBALFOUNDRIES,MTS @ GLOBALFOUNDRIES|PDK Development in EDA/Foundry/IDM|Validation|Automation|CAD & AMS Flow|Project Lead |Collaborator|QA|Complex ProblemSolving & Debugging|Power BI Data Insight/Dashboard dev Skill |Adv 3D IC|Driving,Ở nước ngoài (Singapore),22.1,"Member Of Technical Staff — GLOBALFOUNDRIES (09/2019 – nay)
+Computer Aided Design Engineer — Intel Corporation (11/2018 – 09/2019)
+Manager Application Engineering — Synopsys Inc (06/2015 – 09/2019)
+Senior Applications Engineer — Synopsys Inc (05/2010 – 05/2015)
+CAE Engineer — Synopsys Inc (05/2005 – 05/2010)
+BT Associate — ITC Infotech (09/2004 – 02/2005)","Project Management, Microsoft Office, Python (Programming Language), Printed Circuit Board (PCB) Design, Linux, Computer-Aided Design (CAD), SPICE, DRC, VLSI, LVS, TCL, EDA, Cadence Virtuoso, Python, Shell Scripting, Scripting, Physical Design, Unix, Parasitic Extraction, Perl, Pcell, Analog Circuit Design, ASIC, Verilog, C, Artificial Intelligence (AI), Microsoft Copilot, AI Productivity, AI for Business, AI Literacy","iPDK / OpenAccess / PyCells: ""- Develop and maintain the iPDK & custom PDKs.""
+Lập trình Tcl / Python cho flow: ""- Worked for leading IDMs for converting Skill PDK to Python; Utility scripts for CAD team""
+Làm việc & đánh giá EDA vendor: ""- Worked on enabling Synopsys Custom Compiler Advanced Node Features for Intels 7nm process""
+Kiến trúc & phát triển PDK: ""Finfet and FDSOI PDK Development, Quality Assurance, Problem Solving, Dashboard using Power BI data skills, Advanced pac""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/soumya-ranjan-das-38814b28/,"soumyaranjandas@yahoo.com, soumya.das@globalfoundries.com",
+11,Thomas Leong,37.1,Manager Mainstream PDK @ GLOBALFOUNDRIES,Manager Mainstream PDK at GLOBALFOUNDRIES,"Ở nước ngoài (Malacca, Malaysia)",31.8,"Manager Mainstream PDK — GLOBALFOUNDRIES (08/2013 – nay)
+Senior Member of Technical Staff Advanced Node Design Enablement — GLOBALFOUNDRIES (08/2012 – 07/2013)
+CAD Department Manager — Texas Instruments Melaka (01/2012 – 05/2012)
+CAD Department Manager — National Semiconductor (2011 – 12/2011)
+Senior Section Manager - PDK development — National Semiconductor (2004 – 2010)
+Senior PDK development Engineer — National Semiconductor (2001 – 2004)
+Senior Product/Yield Engineer — National Semiconductor (1997 – 2001)
+Product Engineer - Power Management — National Semiconductor (1995 – 1997)","C, C++, Semiconductors, Linux, Perl, Project Management, Matlab, SKILL language, Shell Scripting, Silicon, IC, Mixed Signal, Analog, Semiconductor Industry, CMOS, Electronics, Integrated Circuits (IC), Application-Specific Integrated Circuits (ASIC), AI Productivity, AI for Business, Artificial Intelligence (AI), Microsoft Copilot","Kiến trúc & phát triển PDK: ""Senior Member of Technical Staff Advanced Node Design Enablement""
+Trích xuất ký sinh PEX & field solver: ""…pects of design enablement ie. Device Library and Pcells, DRC deck development, LVS deck development and PEX deck devel""
+iPDK / OpenAccess / PyCells: ""…Design Enablement Engineer in the area of Device Library and PCells development responsible for 40nm, 55nm, 65nm, 90nm,""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/thomleong/,,
+12,Volker Blaschke,37,Principal @ Silicon RF Synergy,Where chip design and packaging meet technology and EDA,"Ở nước ngoài (Irvine, California, United States)",24.8,"Principal — Silicon RF Synergy (04/2016 – nay)
+Senior Chip Designer — TeraDAR (07/2021 – 02/2026)
+Principal RFIC Designer — BeRex (02/2020 – 09/2020)
+Principal RF CMOS SOI Designer — Wispry (08/2016 – 07/2019)
+Product Manager — Keysight Technologies (03/2015 – 04/2016)
+Technical Director — Tower Semiconductor (03/2002 – 02/2015)","Semiconductors, CMOS, RF, IC, Silicon, Analog, EDA, Simulations, Matlab, Inductors, Transformer, C++, CMOS SOI RFIC, SiGe RFIC, RF IC Design, RF Characterization, Device Modeling, Momentum EM Simulations, Keysight ADS","iPDK / OpenAccess / PyCells: ""…K) with a roster of feature rich passive device components. By construction, 100% DRC/LVS clean and integrates seamless""
+Lập trình Tcl / Python cho flow: ""• Python scripting to automate package floor planning, bump optimization, chip SPI interface controlling, phase shifter ""
+Vật lý linh kiện & quy trình CMOS: ""• Worked with multiple OSATs and served as the primary contact for SOC design partners, aligning all packaging and BEOL ""
+Làm việc & đánh giá EDA vendor: ""• Developer of Passive Device Composer (PDC), a Cadence-native design enablement that delivers scalable, DRC- and LVS-cl""
+Kiến trúc & phát triển PDK: ""…a Cadence centric design add-on that expands limited process design kits (PDK) with a roster of feature rich passive de""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/volkerblaschke/,,
+13,Fathima Humaira Abdul Hameed,36.4,Software Engineer 3 (PDK Development) @ OpenLight,PDK Development | Photonic Layout,"Ở nước ngoài (Hillsboro, Oregon, United States)",9.4,"Software Engineer 3 (PDK Development) — OpenLight (04/2022 – nay)
+Software Engineer III — Juniper Networks (10/2019 – 04/2022)
+Design Automation Engineer/Software Engineer II — Juniper Networks (07/2017 – 10/2019)
+Intern — GLOBALFOUNDRIES (06/2016 – 08/2016)","Electrical Engineering, C, C++, Electronics, Digital Electronics, Research, PCB Design, VLSI, Programming, FPGA, Field-Programmable Gate Arrays (FPGA), Very-Large-Scale Integration (VLSI), Computer Network Operations, ASIC, Corporate Social Responsibility, Matlab, Microsoft Office, Microsoft Excel, Windows, VHDL, PowerPoint, Microsoft Word, Java, Python, Verilog, Perl, Linux, Computer Hardware, UNIX, Public Speaking (+20)","Kiến trúc & phát triển PDK: ""Software Engineer 3 (PDK Development)""
+Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""-Providing physical verification support for mask tape out""","Kinh nghiệm 9.4 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/fathima-humaira-abdul-hameed-b6708a73/,"fatimakid2006@gmail.com, fathimakid2006@gmail.com, fathimahumairaa@gmail.com","+18048749366, +14242004223"
+14,Ken Hung,36.2,,Retired,"Ở nước ngoài (Milpitas, California, United States)",28.7,"SMTS — GLOBALFOUNDRIES (09/2017 – 06/2018)
+Analog Design Engineer — Texas Instruments (12/2013 – 04/2017)
+Platform Manager — Texas Instruments (12/2011 – 11/2013)
+Cad Engineering Manager — National Semiconductor (06/2006 – 11/2011)
+Principle Circuit Design Engineer — National Semiconductor (06/2000 – 05/2006)
+Staff Circuit Design Engineer — National Semiconductor (06/1998 – 05/2000)
+Staff Engineer — National Semiconductor (06/1996 – 05/1997)
+Sr Circuit Design Engineer — National Semiconductor (07/1995 – 06/1996)
+… và 3 vị trí khác",,"Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""Standardization of CDF parameters, symbols, physical verification runsets, error cells, Taguchi LVS and pcell QA. This e""
+iPDK / OpenAccess / PyCells: ""…o run simulation within Agilent's Analog Design System. Involved setting up PDK in ADS and able simulation, confirmed c""
+Làm việc & đánh giá EDA vendor: ""QA and verify callback and pcell functionality of Synopsys OA PDK. Verify simulation of Synopsys OA PDK, and confirm cal""
+Kiến trúc & phát triển PDK: ""Responsible for release of all cmos (0.25 - 0.13u) process design kits, including unit and integration QA, error cell de""","Cấp bậc (Senior) thấp hơn yêu cầu
+Không rõ bằng cấp",https://www.linkedin.com/in/ken-hung-4852b6a/,kennhung@gmail.com,+14153091372
+15,Hua Zhang,33.4,design automation engineer @ Microsemi,design automation engineer at Microsemi,"Ở nước ngoài (Irvine, California, United States)",30.9,"design automation engineer — Microsemi (2009 – nay)
+application engineer — Cadence Design Systems (2002 – 2008)
+ASIC Design Engineer — Sorrento Telecom (2001 – 2002)
+ASIC design / ASIC physical design engineer — Conexant (1996 – 2001)","EDA, ASIC, Verilog, SoC, Physical Design, IC, Timing Closure, Integrated Circuit Design, Physical Verification, Signal Integrity, Analog Circuit Design, Analog, Cadence, Logic Synthesis, Functional Verification, Formal Verification, Digital Signal Processors, Debugging, Clock Tree Synthesis, Simulations, Parasitic Extraction, Place & Route, Application-Specific Integrated Circuits (ASIC), Integrated Circuits (IC)","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""…al support for EDA software for Parasitic extraction, Physical verification, Power analysis, Electron migration analysi""
+Trích xuất ký sinh PEX & field solver: ""Technical support for EDA software for Parasitic extraction, Physical verification, Power analysis, Electron migration a""
+Làm việc & đánh giá EDA vendor: ""Also have hands on experience with Cadence SOC Encounter place&route, timing, signal integrity, formal verification, Inc""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/hua-zhang-375797b/,,
+16,Pratik Chakane,31.1,"Assistant Professor @ Walchand College of Engineering(A Govt. Aided Autonomous Institute),SANGLI-M.S","PDK Engineer @ Intel Corporation | PERC ESD | Reliability Verification | Python Scripting | Logic Driven Layout (LDL) Checks | EDA | CAD | M.Tech VLSI Design from Vellore Institute of Technology, Vellore.",Ở nước ngoài (Greater Bengaluru Area),0.2,"Assistant Professor — Walchand College of Engineering(A Govt. Aided Autonomous Institute),SANGLI-M.S (09/2026 – nay)
+PDK Engineer — Intel Corporation (07/2025 – 05/2026)","Design Rule Checking (DRC), Layout Versus Schematic (LVS), Siemens Calibre, Synopsys IC Validator, Cadence Pegasus, PERC, Electrostatic Discharge (ESD), Programmable Electrical Rule Check, Python (Programming Language), Cadence Virtuoso, SystemVerilog, Verilog, Analog Integrated Circuit Design, Digital IC Design, C (Programming Language), Digital Electronics","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""…RC rule-deck violations using Siemens Calibre, Synopsys IC Validator, and Cadence Pegasus across multiple layer stacks ""
+Lập trình Tcl / Python cho flow: ""• Developed Python automation scripts to automate regression execution, validation reporting, and repetitive debugging t""
+Làm việc & đánh giá EDA vendor: ""…ations using Siemens Calibre, Synopsys IC Validator, and Cadence Pegasus across multiple layer stacks and layout config""
+Kiểm tra ESD & latch-up: ""• Performed Logic-Driven Layout (LDL) validation of ESD protection circuits by analyzing point-to-point resistance and c""
+Kiến trúc & phát triển PDK: ""PDK Engineer""","Kinh nghiệm 0.2 năm < yêu cầu 15 năm
+Cấp bậc (Junior) thấp hơn yêu cầu",https://www.linkedin.com/in/pratikchakane/,,
+17,Romain Feuillette,31,Director of Quantum Design Enablement - QTS PDK @ GlobalFoundries,Director of Quantum Design Enablement - QTS PDK at GlobalFoundries,"Ở nước ngoài (Burlington, Vermont, United States)",24.2,"Director of Quantum Design Enablement - QTS PDK — GlobalFoundries (09/2026 – nay)
+Director, Head of Electrical PDK — GlobalFoundries (03/2025 – nay)
+EDA/CAD/PDK Dep. Director - Global Head of Library development — GlobalFoundries (08/2023 – 04/2025)
+EDA/CAD/PDK Dep. Director - US Library development — GlobalFoundries (07/2020 – 08/2023)
+EDA/CAD - PDK Tech Lead & Library Manager — GlobalFoundries (06/2018 – 07/2020)
+EDA/CAD SMTS - PDK Tech Lead — GlobalFoundries (03/2018 – 06/2018)
+EDA/CAD - PDK & Library - SMTS — GlobalFoundries (06/2017 – 03/2018)
+EDA/CAD Sr. Engineer, PDK & Design Platform Support Team Lead — STMicroelectronics (01/2015 – 06/2017)
+… và 8 vị trí khác","EDA, IC, Semiconductors, Mixed Signal, Analog Design, Analog, TCL, Simulation, Perl, CMOS, DRC, Cadence Virtuoso, Microelectronics, CAD, Python, LVS, Linux, Electronics, Programming, Simulations, Analog Circuit Design, Integrated Circuit Design, ASIC, Verilog, FPGA, Integrated Circuits (IC), Application-Specific Integrated Circuits (ASIC), Semiconductor Industry, C, Testing (+1)","iPDK / OpenAccess / PyCells: ""PLTP Team Leader (PDK, Libraries, Techfiles & Pcells)""
+Kiến trúc & phát triển PDK: ""Director of Quantum Design Enablement - QTS PDK""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/romain-feuillette-9817263/,,
+18,Tianshu Ren,31,CAD Engineer II @ Silicon Labs,CAD Engineer at Silicon Labs,"Ở nước ngoài (Austin, Texas, United States)",4.9,"CAD Engineer II — Silicon Labs (04/2024 – nay)
+CAD Engineer — Silicon Labs (06/2022 – 04/2024)
+CAD Engineering Intern — Silicon Labs (05/2021 – 08/2021)
+Graduate Research Assistant — Cyber-Physical System Lab, College of Engineering and Computer Science, Syracuse University (10/2020 – 02/2021)","Python, C++, Cadence Virtuoso, Verilog, MATLAB","Lập trình Tcl / Python cho flow: ""- Develop utility scripts in Python, Perl, and Cadence Skill for Cadence Virtuoso based custom design and sign-off flows""
+Làm việc & đánh giá EDA vendor: ""- Develop utility scripts in Python, Perl, and Cadence Skill for Cadence Virtuoso based custom design and sign-off flows""
+iPDK / OpenAccess / PyCells: ""- Develop and maintain Silicon Labs custom PDK (Process Design Kit) pcells and technology files in 22nm and 45nm technol""
+Kiến trúc & phát triển PDK: ""- Develop and maintain Silicon Labs custom PDK (Process Design Kit) pcells and technology files in 22nm and 45nm technol""","Kinh nghiệm 4.9 năm < yêu cầu 15 năm
+Cấp bậc (Mid) thấp hơn yêu cầu",https://www.linkedin.com/in/tianshu-ren-729901150/,,
+19,Ketan Jain,30.6,Lead CAD engineer @ Silicon Labs,Lead Engineer - CAD,"Ở nước ngoài (Hyderabad, Telangana, India)",8.4,"Lead CAD engineer — Silicon Labs (11/2024 – nay)
+CAD engineer — Intel Corporation (11/2020 – 11/2024)
+Component Design Engineer — Intel Corporation (07/2018 – 11/2024)
+Intern — Intel Corporation (01/2018 – 06/2018)","Physical Design, Perl, Physical Verification, Tcl-Tk, TCL","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""…e more than 2 years of experience working in technology development CAD focusing on areas as physical verification runs""
+Lập trình Tcl / Python cho flow: ""Worked as automation intern for place and route based tool, helped the physical design team by creating utilities based ""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Kinh nghiệm 8.4 năm < yêu cầu 15 năm",https://www.linkedin.com/in/ketan-jain-12683ab2/,,
+20,Raju M.,29.7,Principal Engineer @ Micron Technology,Principal Engineer @ Micron || Ex IME || Ex GlobalFoundries || Ex NXP || Ex Texas Instruments|| NTU TUM ||,"Ở nước ngoài (Hyderabad, Telangana, India)",16.1,"Principal Engineer — Micron Technology (11/2025 – nay)
+Senior Research Engineer — Institute of Microelectronics (08/2021 – 05/2026)
+Senior Engineer — GLOBALFOUNDRIES (06/2020 – 04/2021)
+Senior Engineer PDK development/Design enablement — GLOBALFOUNDRIES (03/2019 – 04/2021)
+Engineer PDK development/Design Enablement — GLOBALFOUNDRIES (08/2015 – 02/2019)
+Graduate Student — Nanyang Technological University (08/2013 – 07/2015)
+Digital Design Verification Intern — NXP Semiconductors (07/2014 – 03/2015)
+VLSI VERIFICATION ENGINEER-Contract — From Wipro Technologies for Texas Instruments (08/2010 – 07/2013)","VLSI, SoC, Functional Verification, Verilog, SystemVerilog, C, Simulations, Debugging, UVM, VHDL, Embedded Systems, Digital Signal Processing, Mixed Signal, IC, PCB Design, Very-Large-Scale Integration (VLSI), System on a Chip (SoC), PDK Development, Layout Versus Schematic (LVS), PDK, Process Engineering","Kiến trúc & phát triển PDK: ""Senior Engineer PDK development/Design enablement""
+Trích xuất ký sinh PEX & field solver: ""Perform integration testing with cdslibs/LVS/PEX/SpiceModel to ensure proper integration of process design kit component""",Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV),https://www.linkedin.com/in/raju-m-4602451a/,,
+21,Mike Tabat,29.3,,Manager (Retired) - Design Kit Development (PDK) at Texas Instruments,"Ở nước ngoài (Dallas, Texas, United States)",36.5,"Manager (Retired) - Design Kit Development (PDK) — Texas Instruments (08/2005 – 02/2023)
+Design Kit Development (PDK) — Texas Instruments (07/1995 – 08/2005)
+CAD Library Development — DSC (04/1993 – 07/1995)
+Sr. Engineer, Components Engineering — General Dynamics (09/1986 – 04/1993)","IC, Mixed Signal, SoC, Electronics, Analog, Semiconductors, CMOS, Testing, FPGA, CAD, ASIC, Silicon, Physical Verification, VLSI, EDA, Integrated Circuit Design, DRC, Analog Circuit Design, Physical Design","Kiến trúc & phát triển PDK: ""…anager – Provide leadership and management support for PDK Development Team. Assist team members with scheduling, confl""
+Làm việc & đánh giá EDA vendor: ""Create and support PDKs using Cadence ""Analog Artist"" design tools and standardized methodologies.""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/mike-tabat-328412b/,,
+22,Arup Dash,27.8,Industry Advisor @ WAVQON,"Co Founder, InSemiTech",Ở nước ngoài (Greater Bengaluru Area),28.4,"Industry Advisor — WAVQON (08/2026 – nay)
+Semicon Policy Committee Member (State of Odisha) — Government of Odisha (05/2026 – nay)
+Co-Founder — Insemi Technology Services Pvt. Ltd. (01/2016 – nay)
+Engineering Manager — Infineon (09/2014 – 12/2015)
+EDA Manager / Engineering Manager / Architect — Texas Instruments (02/2011 – 08/2014)
+Sr. Staff Engineer — National Semiconductor (10/2008 – 02/2011)
+Sr. Principal Product Specialist — Magma Design Automation India Pvt. Ltd (01/2005 – 09/2008)
+Sr. CAD Engineer — Intel Inc. (12/2002 – 01/2005)
+… và 1 vị trí khác","Program Management, Product Development, People Management, New Business Development, Cost Management, Hiring, Training & Development, Physical Design, Physical Verification, Power Analysis, Static Timing Analysis, Reliability Analysis, Backend, EDA, Customer Service, Scripting, Automation, Analog Circuit Design, Cadence Virtuoso, Project Management, Front-end, CMOS, ASIC, People Skills, Circuit Design, TCL, SoC, Semiconductors, Team Management, Management (+6)","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""Setup and headed Physical Verification Business Unit in India for both product Engineering and R&D. Training. Other resp""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Cấp bậc (Senior) thấp hơn yêu cầu
+Không rõ bằng cấp",https://www.linkedin.com/in/arup-dash/,,
+23,Glory Leloit,25.5,,Senior Manager PDK CAD EDA,"Ở nước ngoài (Bengaluru, Karnataka, India)",10.3,"EDA engineer — Sony (01/2018 – 12/2018)
+Advanced R & D engineer(PDK Developer) — Keysight Technologies (09/2008 – 12/2017)","Perl Automation, EDA, VLSI, PDK, Cadence Virtuoso, Cadence, Physical Verification, DRC, ASIC, Verilog, LVS, CMOS, IC, PDK Development, Analog, Analog Circuit Design, Semiconductors, Layout Versus Schematic (LVS), C, Design Rule Checking (DRC)","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""Develop and Qualify Front to Back end PDK's for various semiconductor foundries along with physical verification decks.""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Kinh nghiệm 10.3 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/glory-leloit-843b3525/,,
+24,Edgar P.,24.9,Process Design Kit Engineer II @ onsemi,PDK Development Engineer II @ onsemi,"Ở nước ngoài (Kingston, Rhode Island, United States)",6.3,"Process Design Kit Engineer II — onsemi (08/2024 – nay)
+3D Printing Lab Staff — University of Rhode Island (09/2023 – 08/2024)
+Graduate Teaching Assistant — University of Rhode Island (01/2023 – 08/2024)
+Graduate Teaching Assistant — University of Rhode Island (09/2023 – 01/2024)
+Undergraduate Researcher - Power Electronics Laboratory — University of Rhode Island (05/2022 – 06/2023)
+Resident Advisor — University of Rhode Island (08/2020 – 05/2022)
+Electrical Engineering Parallel Co-Op — Caterpillar Inc. (08/2023 – 08/2024)
+Electrical Engineering Intern — Caterpillar Inc. (05/2023 – 08/2023)
+… và 1 vị trí khác","Electronics Hardware Design, Power Electronics, PDK Development, Control Systems Design, pCell, SKILL programming Language, pCell development, Virtuoso, TCL, TVF, Layout Versus Schematic (LVS), Design Rule Checking (DRC), Rule File Optimization, Layer Operations, Dimensional Checks, SVRF, Calibre Concepts, Connectivity, Working With Antennas, Macros and TVF, Runtime TVF, Device Recognition, Device Computation, Device Annotation, SKILL Programming L, Cadence Virtuoso, Cadence Software, Cadence Virtuoso Layout Editor, Cadence, University Lecturing (+32)","Kiến trúc & phát triển PDK: ""Process Design Kit Engineer II""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 6.3 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/edgarponce7/,,
+25,Yiqun Lin,24.3,Senior CAD Engineering Director @ Silicon Labs,Senior CAD Engineering Director at Silicon Labs,"Ở nước ngoài (Austin, Texas, United States)",35.6,"Senior CAD Engineering Director — Silicon Labs (03/2024 – nay)
+CAD Engineering Director — Silicon Labs (01/2016 – 03/2024)
+Senior CAD Engineering Manager — Silicon Labs (06/2014 – 01/2016)
+CAD Engineering Manager — Silicon Labs (02/2010 – 06/2014)
+Staff CAD Engineer — Silicon Labs (08/2005 – 01/2010)
+Sr. Principal CAE Engineer — Harris Semicondutor, Intersil, Conexant (Spin-off, M&A) (08/1997 – 08/2005)
+Hardware/Software Engineer — NASA/Mitre/Florida Tech (03/1996 – 05/1997)
+Hardware Engineer — Hitachi Fujian (08/1990 – 07/1995)","Mixed Signal, Analog, IC, Semiconductors, ASIC, CMOS, Integrated Circuit Design, Application-Specific Integrated Circuits (ASIC), CAD, EDA, Verilog","Kiến trúc & phát triển PDK: ""…circumstances, steering the team through critical decisions such as foundry PDK development, vendor and tool selection,""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/yiqun-lin-4881155/,,
+26,Sai Prabhat Bhogi,23.6,"Project Associate I @ Indian Institute of Technology, Roorkee","Engineer (All Rounder) You name it, I do it.",Ở nước ngoài (Greater Hyderabad Area),3.4,"Project Associate I — Indian Institute of Technology, Roorkee (01/2026 – nay)
+Business Executive — ROORKEE PPE SOLUTIONS (05/2025 – nay)
+Career break (02/2025 – 04/2025)
+ICV Runset Development Engineer — Synopsys Inc (07/2023 – 01/2025)
+PDK Intern (Technical-Engineering) — Synopsys Inc (02/2023 – 07/2023)","GIS, PostGIS, Historic Preservation, Engineering Support, ArchesProject, Web Development, Government Procurement, E-Commerce, Business-to-Business (B2B), Sales Management, Store Management, Operations Management, Parasitic Extraction, Design Rule Checking (DRC), ICV Runsets, Shell Scripting, Linux, Custom Compiler, TCL, Python (Programming Language), Teamwork, C (Programming Language), Object-Oriented Programming (OOP), Content Management, Leadership, Programming Languages, Arduino, C++","Viết rule deck DRC/LVS (SVRF/PVL/ICV): ""ICV Runset Development Engineer""
+Lập trình Tcl / Python cho flow: ""Design Rule Checking (DRC) · Python (Programming Language)""
+Làm việc & đánh giá EDA vendor: ""Software Development (Synopsys Inc)""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Kinh nghiệm 3.4 năm < yêu cầu 15 năm
+Cấp bậc (Mid) thấp hơn yêu cầu",https://www.linkedin.com/in/sai-prabhat-bhogi-7bb855198/,,
+27,Vipin Madangarli,23.6,SemiX Fellow / Professor Of Practice @ SemiX IIT Bombay,SemiX Fellow/Professor Of Practice | Former Director & India Site Chief Technology Officer @ GlobalFoundries,"Ở nước ngoài (Bengaluru, Karnataka, India)",29.8,"SemiX Fellow / Professor Of Practice — SemiX IIT Bombay (09/2025 – nay)
+Director & India Site Chief Technology Officer — GlobalFoundries (10/2022 – 09/2025)
+Director & Interim Site General Manager — GlobalFoundries (10/2021 – 09/2022)
+Director & India Site Lead for Client Design Enablement — GlobalFoundries (01/2020 – 09/2021)
+Deputy Director — GlobalFoundries (07/2015 – 12/2019)
+Senior Program Manager, SRDC (Comp-Litho, eMemory, 200mm Enablement & TCAD) — IBM (10/2014 – 06/2015)
+Senior Manager, SRDC (Comp-Litho, eMemory & 200mm Enablement) — IBM (08/2014 – 10/2014)
+Senior Manager, Comp-Litho & eMemory Teams — IBM (03/2014 – 08/2014)
+… và 6 vị trí khác","Mixed Signal, Semiconductors, Testing, EDA, Analog, Characterization, Semiconductor Industry","Tương quan kết quả với dữ liệu silicon: ""• Design validation through first silicon characterization.""
+Kiến trúc & phát triển PDK: ""Director & India Site Lead for Client Design Enablement""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/vipinmadangarli/,,
+28,Nikolay Vasilev,22.4,Senior Engineer Design Enablement @ GlobalFoundries,Senior Engineer Design Enablement,"Ở nước ngoài (Sofia, Sofia City, Bulgaria)",6.1,"Senior Engineer Design Enablement — GlobalFoundries (07/2024 – nay)
+Engineer Design Enablement — GlobalFoundries (04/2021 – 07/2024)
+Trainee - Electronic Design Automation in Microelectronics — GlobalFoundries (11/2020 – 04/2021)
+Hardware Design Internship — Visteon Corporation (07/2019 – 06/2020)","Databases, Python (Programming Language), Object-Oriented Programming (OOP), Perl, Parasitic Extraction, Red Hat Linux, Git","Kiến trúc & phát triển PDK: ""Senior Engineer Design Enablement""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 6.1 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/nikolay-vasilev-32a73a1bb/,,
+29,Hooman Jarollahi,21.9,CAD Engineering Manager (Simulation and Modeling) @ Silicon Labs,CAD Engineering Manager (Simulation and Modeling) at Silicon Labs,"Ở nước ngoài (Austin, Texas, United States)",19.2,"CAD Engineering Manager (Simulation and Modeling) — Silicon Labs (08/2022 – nay)
+Senior CAD Engineer/Lead CAD Engineer — Silicon Labs (02/2018 – 08/2022)
+CAD Engineer — Silicon Labs (01/2015 – 02/2018)
+Research and Teaching Assistant (Ph.D. work) — McGill University (09/2010 – 12/2014)
+Visiting Scholar — Research Institute of Electrical Communication (RIEC), Tohoku University (11/2012 – 09/2013)
+Research and Teaching Assistant (Master's work) — Simon Fraser University (09/2008 – 06/2010)
+Part-time Research Assistant — Simon Fraser University (05/2007 – 05/2008)
+Research Assistant (NSERC USRA) — Simon Fraser University (05/2007 – 08/2007)
+… và 2 vị trí khác","Cross-functional Team Leadership, Mixed-Signal Integrated Circuits, Functional Verification, Management, Automation, Modeling, SPICE, Computer-Aided Design (CAD), Logic Design, Simulations, Analog Circuit Design, VLSI, ASIC, Circuit Design, FPGA, Signal Processing, Algorithms, Scripting, Perl, Python, Verilog, VHDL, C++, C, Matlab, Simulink, LaTeX, C#, Cadence Spectre, AFS (+24)","Kiến trúc & phát triển PDK: ""…PDK front-end development, delivering production-ready process design kits through custom SKILL coding, CDF, callbacks,""",Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV),https://www.linkedin.com/in/hoomanj/,,
+30,Yuchun Zhou,21.4,"Principal Engineer, Optical Architecture @ Lumilens",Photonics Researcher and Engineer,Ở nước ngoài (San Francisco Bay Area),17.1,"Principal Engineer, Optical Architecture — Lumilens (06/2026 – nay)
+Director of Silicon Photonics — Neurophos (02/2026 – 06/2026)
+PIC Technical Lead, Silicon Photonics — Intel Corporation (02/2022 – 03/2026)
+Staff Laser & PIC Development Engineer, Advanced Development — Infinera (12/2017 – 02/2022)
+Staff Development and Integration Engineer — Lumentum (05/2015 – 12/2017)
+Graduate Student Researcher — UC San Diego (09/2009 – 02/2015)
+Teaching Assistant - Components and Circuits Laboratory — UC San Diego (04/2011 – 06/2011)
+Teaching Assistant - Fundamentals of Devices & Materials — UC San Diego (10/2010 – 12/2010)
+… và 1 vị trí khác","Systems Analysis, System Requirements, Design Specifications, Detailed Design, Optical Components, Transceivers, Matlab, Nanotechnology, Nanoelectronics, Silicon Photonics, COMSOL, Sputtering, Photolithography, Optoelectronics, Semiconductors, Thin Films, CVD, Photonics, Characterization, Simulations, R&D, C, Electronics, Materials Science, C++, Object-Oriented Programming (OOP), Python","Lập trình Tcl / Python cho flow: ""…el based on PIC components and system (DSP/TIA) specification (Python-based GUI enabled). (2) Simulation of frequency c""
+Làm việc & đánh giá EDA vendor: ""…out engine with PIC simulation tools (in collaboration with Synopsys & VPI Photonics): successful PAM4 and 16QAM transc""
+Kiến trúc & phát triển PDK: ""…c/Photonic Design Automation (EPDA) platform and foundry PDK development, including design and optimization of data-dri""",Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV),https://www.linkedin.com/in/yuchun-zhou-189a0716/,,
+31,Mohamed Ramadan,18.9,Physical design verification/CAD development SW Engineer @ Intel Corporation,Physical design verification/CAD development SW Engineer,Ở nước ngoài (New York City Metropolitan Area),17.9,"Physical design verification/CAD development SW Engineer — Intel Corporation (03/2021 – nay)
+Advanced data and process characterization and optimization Lead R&D team — Photronics (09/2017 – 03/2021)
+Senior Member of Technical Staff — GLOBALFOUNDRIES (07/2015 – 08/2017)
+Advisory Engineer — IBM (11/2013 – 07/2015)
+RET/OPC/DRC IC design consultant — Mentor Graphics (01/2009 – 11/2013)","Neural Networks, RET, OPC and Modeling, Tcl-Tk, Linux, Unix Shell Scripting, EDA, Semiconductors, EMF, TMA, DRC, TCL, IC, VLSI, Perl, Verilog, CMOS, Debugging, ASIC, Physical Design, VHDL, Simulations, Shell Scripting, C++, Integrated Circuits (IC), Lua, Application-Specific Integrated Circuits (ASIC), Testing, Very-Large-Scale Integration (VLSI), Characterization, Electronics (+20)","Lập trình Tcl / Python cho flow: ""…designing an automation tools and programs using python/TCL code to generate different design patterns, perform SEM ima""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/mohamed-ramadan-a4319a58/,,
+32,Nathan Lin,18,TX Design Lead @ Texas Instruments,Scaling Electronics with Silicon Photonics,"Ở nước ngoài (Santa Clara, California, United States)",12.5,"TX Design Lead — Texas Instruments (10/2026 – nay)
+Staff Designer at Kilby Labs — Texas Instruments (06/2025 – 10/2026)
+Director of Photonics Outreach — AIM Photonics (12/2023 – 06/2025)
+Staff Optical Engineer — Marvell Technology (03/2021 – 05/2023)
+Postdoctoral Researcher — Rice University (11/2019 – 03/2021)
+Doctorate Candidate — Columbia University in the City of New York (09/2013 – 07/2019)","Analog Circuits, Digital Circuit Design, Analog Circuit Design, Cadence Virtuoso, Cadence Virtuoso Layout Editor, Very-Large-Scale Integration (VLSI), Co-Packaged Optics, optical transceiver, Signal Integrity, Printed Circuit Board (PCB) Design, Advanced Package Designer, Silicon Photonics, Marketing Strategy, Business Development, Cross-functional Team Leadership, Optical Communications, Data Center Architecture, Radio Frequency (RF), Nanofabrication, Python (Programming Language), Data Analysis, Zemax","Làm việc & đánh giá EDA vendor: ""-End to end optical transceiver EO co-simulation in Cadence.""
+iPDK / OpenAccess / PyCells: ""…ested active and passive silicon photonics parametric cells for PDK library development. Circuit layout and Pcell creat""",Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV),https://www.linkedin.com/in/nathan-c-lin/,,
+33,Ashish Kumar,17.1,Product Validation Engineer II @ Cadence Design Systems,Product Validation Engineer II at Cadence Noida,Ở nước ngoài (India),7.2,"Product Validation Engineer II — Cadence Design Systems (06/2022 – nay)
+Sr Engineer Tapeout Engineering — GLOBALFOUNDRIES (05/2021 – 06/2022)
+CAD Engineer( PDK Development) — Analog Devices( Contractor) (10/2019 – 04/2021)
+CAD Engineer — Yoctozant Technologies Private Limited (10/2019 – 04/2021)","VLSI(Digital Circuit Design ), Verilog, Wireless Communications Systems, Signal Processing, Machine Learning, Image Processing, C (Programming Language), Microsoft Excel, Microsoft Office, Microsoft PowerPoint, Microsoft Word, Leadership, Management, Communication, Digital Circuit Design, Fuzzy Systems, MIMO, Orthogonal Frequency-Division Multiplexing (OFDM), Digital Electronics, Field-Programmable Gate Arrays (FPGA), Computer Vision, ASIC, PSpice, Modelsim, Digital Image Processing, Static Timing Analysis, 5G, Python, EDA playground, Data structures (+6)","Kiến trúc & phát triển PDK: ""CAD Engineer( PDK Development)""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 7.2 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu
+Không có mô tả công việc — chỉ dựa vào chức danh/skill",https://www.linkedin.com/in/ashish-kumar-34b141141/,,
+34,Supriya Sharma,17.1,Physical Design PDK Engineer II @ NXP Semiconductors,"Physical Design PDK Engineer II @ NXP Semiconductors | PNR, Innovus, Asic","Ở nước ngoài (Chandigarh, India)",5.4,"Physical Design PDK Engineer II — NXP Semiconductors (04/2025 – nay)
+PDK Engineer — NXP Semiconductors (07/2023 – 04/2025)
+Technical Intern — NXP Semiconductors (06/2022 – 07/2023)
+Vice President — Ebuzz club (01/2022 – 06/2022)
+Executive — Ebuzz club (07/2020 – 01/2022)","PNR, Innovus, Asic, EAD, Redhawk, Voltus, Quantus, Pdk validation, PDK Development, EM/IR, Parasitic Extraction, CAD Tools, Circuit, Analog Semiconductors, MOSFET, Analog Layout, MATLAB, CMOS, Digital Electronics, Xilinx Vivado, Verilog, Cadence Virtuoso","Kiến trúc & phát triển PDK: ""Physical Design PDK Engineer II""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 5.4 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/supriya-sharma-361319206/,,
+35,Hadi Rabbani,16.6,Principal Optical Transceiver Component Validation Specialist @ Marvell Technology,Optical transceiver component validation specialist,"Ở nước ngoài (Thousand Oaks, California, United States)",14.8,"Principal Optical Transceiver Component Validation Specialist — Marvell Technology (02/2025 – nay)
+Principal Photonic Integrated Circuit (PIC) Specialist — Lightwave Logic, Inc. (02/2023 – 02/2025)
+Silicon Photonics IC designer — Ciena (06/2021 – 02/2023)
+Design validation, Test and measurement specialist (photonic components, high speed) — Ciena (06/2017 – 05/2021)
+Postdoctoral researcher in integrated photonics — UQAM | Université du Québec à Montréal (11/2014 – 06/2017)
+Postdoctoral researcher in integrated photonics — Eindhoven University of Technology (12/2011 – 07/2014)","Product Requirements, Spec Sheets (Fashion), Data Acquisition, Transmitters, Transceivers, Communication, Zemax, Waveguide, Modeling Tools, Layout Tools, Layout Design, Dca, Vector Network Analyzers (VNA), Bert, Luna, Probe Station, Radio Frequency (RF), PIC design, PIC, Silicon Photonics, photonic design, Measurements, Optical Fiber, Cadence Virtuoso, ANSYS Products, Photonics, Optics, Laser, Nanotechnology, Matlab (+35)","Làm việc & đánh giá EDA vendor: ""GDS Mask layout design in Cadence virtuoso""",Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV),https://www.linkedin.com/in/hadi-rabbani/,,
+36,"Pengfei GUO (Ph.D, PMP)",16.3,Senior Manager @ Advanced Micro Foundry,R&D PDK development Senior Manager,Ở nước ngoài (Singapore),13.9,"Senior Manager — Advanced Micro Foundry (01/2024 – nay)
+Manager — Advanced Micro Foundry (01/2021 – 01/2024)
+Research Scientist — Advanced Micro Foundry (07/2017 – 01/2021)
+Principal Engineer — GLOBALFOUNDRIES (12/2015 – 01/2017)
+Senior Engineer — GLOBALFOUNDRIES (10/2013 – 12/2015)
+Research Engineer — National University of Singapore (08/2012 – 10/2013)",,"Kiến trúc & phát triển PDK: ""R&D PDK development""",Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV),https://www.linkedin.com/in/pengfei-guo-ph-d-pmp-9327ab21/,,
+37,Peter Shi,15.5,Foundry Engineer @ Silicon Labs,Foundry engineer at Silicon Labs,"Ở nước ngoài (Austin, Texas, United States)",24,"Foundry Engineer — Silicon Labs (12/2021 – nay)
+Foundry process development manager — Cirrus Logic (12/2012 – 12/2021)
+Onsite foundry project manager — Texas Instruments, Inc (02/2011 – 11/2012)
+Process Integration Engineer, Advanced CMOS Technology Development — Texas Instruments (Dallas, TX) (05/2010 – 02/2011)
+Member of Technical Staff — GLOBALFOUNDRIES (04/2009 – 07/2010)
+Member of Technical Staff — AMD (04/2006 – 03/2009)
+MTS — Advanced Micro Devices (2006 – 2009)
+Senior device engineer — Motorola/Freescale (12/2002 – 04/2006)","C++, Presentation Skills, Electromigration, Manufacturing Process Improvement, Device reliability, Semiconductor Device, Tape out, Design Rule Checking (DRC), Data Analysis, Product Development, Project Management, Communication, Process Integration, CMOS, Yield, Semiconductor Industry, Analog, Failure Analysis, SPICE, SRAM, Silicon, IC, Mixed Signal, Semiconductors, Analog Circuit Design, SoC, Integrated Circuits (IC), Circuit Design","Kiến trúc & phát triển PDK: ""Advanced technology PDK development.""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/peter-shi-7ab3397/,,
+38,Yuxuan Li,14.6,Principal Eng Device Engineering @ GlobalFoundries,Principal Device Engineer @ GlobalFoundries | Foundry Technology & Silicon Enablement | Advanced CMOS | PDK | Yield & Qualification | Advanced Packaging,"Ở nước ngoài (Albany, New York Metropolitan Area)",8.8,"Principal Eng Device Engineering — GlobalFoundries (11/2025 – nay)
+Sr Eng Device Engineering — GlobalFoundries (09/2022 – 11/2025)
+Research Assistant — Rutgers Electrical and Computer Engineering (09/2022 – 09/2022)
+Teaching Assistant — Rutgers University (01/2019 – 01/2022)
+Graduate Assistant — Rutgers University (07/2017 – 01/2019)","Silicon Characterization, Root Cause Analysis, Process Qualification, Foundry Techology, KLayout, FinFET, PDK Development, Advanced CMOS, JMP, GitHub Copilot, Statistical Process Control (SPC), Advanced Packaging, Semiconductor Process Integration, FD-SOI, Yield Analysis, Device Physics, Cadence Virtuoso, Semiconductor Device, Nanotechnology, OriginLab, Silvaco, Microsoft Office, Matlab, L-Edit, Python, C, Tetramax, Microsoft Excel, Microsoft Word, Microsoft PowerPoint (+37)","iPDK / OpenAccess / PyCells: ""…uild and electrical characterization, partnering with PDK/design teams on PCell and DRC implementation and with modelin""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 8.8 năm < yêu cầu 15 năm",https://www.linkedin.com/in/yuxuan-li-ru/,,
+39,Troy Tamas,14.4,Co-founder and CEO @ GDSFactory,Building chips faster 🚀,"Ở nước ngoài (Shizuoka, Japan)",17.5,"Co-founder and CEO — GDSFactory (04/2024 – nay)
+Open Source Maintainer — GDSFactory (06/2019 – nay)
+Director of Design Automation and Enablement — Rockley Photonics Inc. (11/2021 – 04/2024)
+Principal Engineer, Design Automation — Rockley Photonics Inc. (04/2020 – 11/2021)
+Sr. Photonics Design Automation Engineer — Rockley Photonics Inc. (04/2019 – 04/2020)
+Hardware Engineer — Juniper Networks (08/2016 – 04/2019)
+PDK Development Engineer — Aurrion (05/2015 – 08/2016)
+Engineer — Samsung Electro-Mechanics Japan Advanced Technology (08/2010 – 05/2015)
+… và 5 vị trí khác","Python (Programming Language), Matlab, Software Development, Microsoft Excel, Python, Software Engineering, C++, Machining, CAD/CAM, Numerical Simulation, C#, User-centered Design, Visual Studio, R, Optimization, CFD, Scientific Programming, Multi-body Dynamics, Microfluidics, Tribology, EDA, Teaching, R&D, Product Design, Simulations, SolidWorks, Research and Development (R&D), DevOps","Kiến trúc & phát triển PDK: ""PDK Development Engineer""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/troy-tamas/,,
+40,Ellada Avshaloumova,14.1,"Vice President, North America Fab Operations @ Tower Semiconductor","Semiconductor Executive | VP, North America Fab Operations | Multi-Site Manufacturing | Engineering & Device Integration | Operational Excellence | Technology & Business Strategy","Ở nước ngoài (Newport Beach, California, United States)",16.9,"Vice President, North America Fab Operations — Tower Semiconductor (09/2026 – nay)
+Vice President Operations — Tower Semiconductor (08/2021 – 09/2026)
+VP of Global Operational Excellence — Tower Semiconductor (01/2018 – 01/2023)
+Corporate Director, Industrial Engineering, Systems & Applications — Tower Semiconductor (01/2016 – 01/2018)
+Power Management Business Unit Program Manager & Technology Transfer Owner — Tower Semiconductor (01/2014 – 01/2016)
+CMOS Image Sensor Business Unit Integrator & Customer Accounts Manager — Tower Semiconductor (01/2010 – 01/2014)","Multi-Site Responsibility, Multi-Site Operations, Semiconductor Fabrication, Manufacturing Operations, Operational Excellence, Manufacturing Strategy, Business Strategy, Product Development, Business Planning, Supply Chain Capabilities, Analytics and Machine Learning in Supply Chains, Framework for Digital Supply Chain Transformation, End-to-End Supply Chain Visibility, Emerging Trends in Supply Chain Management, Product Design Support, Customer Relationship Management (CRM), Tape out support, Systems Engineering, Industrial Engineering, Continuous Improvement, Manufacturing Systems, Production Planning, Business Process Improvement, Manufacturing Process Improvement, Continuous Process Improvement, Lean Process Improvement, Device Engineering, Capital Equipment, Semiconductor Fabrication Management, Operations Management (+19)","Kiến trúc & phát triển PDK: ""…S image sensor process development based on pixel and device specifications, including process flow, design rules, PDK ""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Không rõ bằng cấp",https://www.linkedin.com/in/ellada-avshaloumova/,,
+41,Rahul kumar,13.5,Lead PDK Engineer @ NXP Semiconductors,Lead PDK Engineer at NXP SEMICONDUCTOR,"Ở nước ngoài (Patna, Bihar, India)",4.4,"Lead PDK Engineer — NXP Semiconductors (04/2026 – nay)
+Senior PDK engineer — NXP Semiconductors (04/2024 – 03/2026)
+PDK engineer — NXP Semiconductors (07/2022 – 03/2024)
+Intern — NXP semiconductor (09/2021 – 07/2022)","C (Programming Language), Verilog, Digital IC Design, Analog Integrated Circuit Design, LTSpice, TCAD, Cadence Virtuoso, LaTeX, MATLAB, Microsoft Office, Very-Large-Scale Integration (VLSI), Computer Architecture, Field-Programmable Gate Arrays (FPGA)","Kiến trúc & phát triển PDK: ""Lead PDK Engineer""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 4.4 năm < yêu cầu 15 năm",https://www.linkedin.com/in/rahul-kumar-1a3235159/,,
+42,raj hiremath,13.1,Staff Engineer @ Broadcom Inc.,Staff Design Engineer at Broadcom Inc.,Ở nước ngoài (India),16.4,"Staff Engineer — Broadcom Inc. (06/2019 – nay)
+Staff Engineer — Samsung Electronics (03/2018 – 06/2019)
+Technical Lead — Samsung Electronics (04/2015 – 06/2019)
+Senior Member of Technical Staff — DXCorr Design Inc (07/2010 – 04/2015)
+Intern — LSI Corporation (07/2007 – 01/2008)","C, ASIC, Verilog, Circuit Design, Semiconductors, Testing, Programming, Shell Scripting, Automation, Software Development, Layout, Linux, C++, Perl, C#, Databases, Windows, Python, Physical Design, RTL design, CMOS, EDA, SKILL, memory circuit design, sram","Làm việc & đánh giá EDA vendor: ""1. Development of PDK using parameterised cells using cadence SKILL.""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)",https://www.linkedin.com/in/raj-hiremath-52836920/,,
+43,Jiansheng Xu,12.6,,PDK development engineer at GLOBALFOUNDRIES,"Ở nước ngoài (Essex Junction, Vermont, United States)",0,PDK development engineer — GLOBALFOUNDRIES,,"Kiến trúc & phát triển PDK: ""PDK development engineer""","Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Profile không ghi thời gian làm việc — không tính được số năm kinh nghiệm
+Không rõ bằng cấp
+Không có mô tả công việc — chỉ dựa vào chức danh/skill",https://www.linkedin.com/in/jiansheng-xu-156aa7105/,,
+44,Md Majharul Islam,12.3,Graduate Research Assistant @ University of Arkansas,PhD Researcher | Semiconductor Device Modeling & Characterization • SiC CMOS Process Devs • PDK/EDA Design Automation• Seeking Summer 27 Opportunity,"Ở nước ngoài (Fayetteville, Arkansas, United States)",8.2,"Graduate Research Assistant — University of Arkansas (01/2024 – nay)
+Assistant General Manager — Bangladesh Rural Electrification Board (11/2021 – 12/2023)
+Lecturer — Sonargaon University(SU) (01/2019 – 11/2021)
+Data Science, AI Trainee — Fujitsu (09/2019 – 12/2019)
+Project Engineer — Shanta Holdings Limited (09/2018 – 01/2019)","Semiconductor Engineering, Compound Semiconductors, Semiconductor Fabrication, Device Model, Cadence Virtuoso, TCAD, Semiconductor Process Technology, Semiconductor Device, Device Characterization, Verilog-A, CAD, Power Electronics Design, Integrated Circuits (IC), Device Modeling, Mixed-Signal Integrated Circuits, Power Distribution, Electrical and Instrumentation Engineering (EIE), Electricity Transmission and Distribution, Electric Sub-station operations and maintenance, Energy Management, Rural Electrification, Network Operations Center (NOC), Power Plants, Power Systems, Overhead Power Lines, Research Support, Python (Programming Language), Electrical Engineering, Matlab, Signal Processing (+22)","Lập trình Tcl / Python cho flow: ""Research Support · Python (Programming Language)""","Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 8.2 năm < yêu cầu 15 năm
+Cấp bậc (Junior) thấp hơn yêu cầu",https://www.linkedin.com/in/majhar/,,
+45,Reece Defrees,9.7,Silicon Photonics PDK Devopment Engineer @ Intel Corporation,Silicon Photonics PDK Development Engineer,"Ở nước ngoài (Rio Rancho, New Mexico, United States)",20.4,"Silicon Photonics PDK Devopment Engineer — Intel Corporation (01/2026 – nay)
+Staff Process Architecture Engineer — Intel Corporation (12/2022 – 02/2026)
+Product Integration Engineer — Intel Corporation (03/2019 – 12/2022)
+Process Integration Engineer — Intel Corporation (07/2006 – 03/2019)","Semiconductor Engineering, ROI Strategies, JMP, C# in .NET, Visual Basic .NET (VB.NET), Research and Development (R&D), Semiconductor Industry, Quality Management, Product Management, Data Analysis, Lean Manufacturing, Product Development, Change Management, Statistical Process Control (SPC), Model Based Problem Solving, Silicon Photonics, Quality Control, Customer Experience, Process Integration, Project Management, Semiconductor Fabrication, Semiconductor Process, Statistical Data Analysis, Manufacturing Process Improvement, Plasma Physics, Plasma-Enhanced Chemical Vapor Deposition (PECVD), Plasma Etching, Inductively Coupled Plasma, Sputter Deposition",,"Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Cấp bậc (Senior) thấp hơn yêu cầu
+Không rõ bằng cấp",https://www.linkedin.com/in/reece-defrees-68912b334/,,
+46,Jieun Kim,9.4,FinFET Device Engineer @ 삼성전자,"Samsung Electronics / Ph.D / Logic Device, PDK","Ở nước ngoài (Gyeonggi, South Korea)",5.8,FinFET Device Engineer — 삼성전자 (02/2021 – nay),"EDA, Passive Device, Capacitor, LLE analysis, PEX, Nanodevice engineer, PLY analysis, PDK devleoping, Logic Device anlysis, Device physics, Nanodevice, Nano probing, Spice modeling, CVD growth (Thin flim), B1500, AFM(원자력 현미경), SEM, XPS ANALYSIS, Measurements, 2D material",,"Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 5.8 năm < yêu cầu 15 năm
+Cấp bậc (Senior) thấp hơn yêu cầu",https://www.linkedin.com/in/jieun-kim-0226b3391/,,
+47,Basavaraj Sonappanavar,9,,CAD Engineer (PDK) at Silicon Labs,"Ở nước ngoài (Karnataka, India)",6.3,"Associate Staff CAD Engineer (04/2026 – 04/2026)
+Lead Engineer - CAD (04/2023 – 03/2026)
+PDK Validation Engineer (06/2021 – 12/2021)
+Senior Analog Layout Engineer (04/2021 – 06/2021)
+Analog Layout Engineer (10/2018 – 03/2021)","SKILL, Python (Programming Language), Cadence Virtuoso, Analog Layout, Shell Scripting, VLSI, Semiconductors, VBA Excel, Perl Automation, Cadence Virtuoso Layout Editor, VLSI CAD",,"Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 6.3 năm < yêu cầu 15 năm
+Không có mô tả công việc — chỉ dựa vào chức danh/skill",https://www.linkedin.com/in/basavarajsonappanavar/,,
+48,Mehedhi Hasan,8.4,"Principal Process Development Engineer @ Lightwave Logic, Inc.","Principal Process Development Engineer, Lightwave Logic (Ex. Intel, Micron) || Product Development || Process Integration || Photonic Chip fabrication",Ở nước ngoài (Denver Metropolitan Area),15.4,"Principal Process Development Engineer — Lightwave Logic, Inc. (11/2023 – nay)
+Process Engineer — Intel Corporation (11/2019 – 10/2023)
+Research Assistant — Texas State University (01/2016 – 10/2019)
+Equipment Trainer — Texas State University (08/2017 – 05/2018)
+Teaching Assistant — Texas State University (08/2015 – 05/2018)
+R&D Metrology Engineer (Intern) — Micron Technology (05/2018 – 08/2018)
+Lecturer — Shahjalal University of Science and Technology (01/2013 – 07/2015)
+Scientific Officer — Bangladesh Council of Scientific and Industrial Research (BCSIR) (10/2012 – 12/2012)
+… và 1 vị trí khác","Product Launch, Semiconductor Process Development and Integration, Frontend of line (FEOL) process development, Backend of line (BEOL) process development, Statistical Process Control (SPC), Project Management, Process transfer from RnD to High volume manufacturung, Mass Production, Plasma-Enhanced Chemical Vapor Deposition (PECVD), Chemical Vapor Deposition (CVD), Physical Vapor Deposition (PVD), Atomic Layer Deposition (ALD), Photonic Chip Fabrication, Sputter Deposition, Electro-optic Modulator, Failure Analysis, Ellipsometry, Recipe Scaling, People Management, Microfabrication, Research and Development (R&D), Metrology, Thin Films, Semiconductor Engineering, Atomic Force Microscopy (AFM), Process Integration, Photolithography, Electron Beam Lithography, Product Development, Product Development for Lab to Fab transition (+19)",,"Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)",https://www.linkedin.com/in/mehedhi-hasan-6b3611104/,,
+49,SAI ROOPA CHINNAPU,3.9,Physical Design Engineer @ Xelium Technologies,Physical Design Engineer | works at Xeliumtek| currently working as a client of Mediatek...,"Ở nước ngoài (Andhra Pradesh, India)",2.3,Physical Design Engineer — Xelium Technologies (08/2024 – nay),"VIM EDITOR, Sed, Awk, Grep, Linux, prime time, Innovus, Verilog, Python (Programming Language), Routing, Synopsys Design Compiler, Clock Tree Synthesis, Placement, Power plan, Floorplan, Sta, Perl, TCL, Genus, Physical Synthesis, Logical synthesis",,"Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)
+Kinh nghiệm 2.3 năm < yêu cầu 15 năm
+Cấp bậc (Mid) thấp hơn yêu cầu",https://www.linkedin.com/in/sai-roopa-chinnapu-8337b3253/,,
+50,Kevin McComber,1.2,Co-Founder and CEO @ Spark Photonics,"CEO, Spark Photonics Design | Executive Director, Spark Photonics Foundation","Ở nước ngoài (Waltham, Massachusetts, United States)",15.4,"Co-Founder and CEO — Spark Photonics (02/2019 – nay)
+Co-Founder and Executive Director — Spark Photonics Foundation (02/2019 – nay)
+Industrial Advisory Board Member, Department of Electrical & Computer Engineering — Western New England University (10/2021 – nay)
+Adjunct Professor of Electrical & Computer Engineering — University of Massachusetts Dartmouth (10/2021 – 06/2024)
+Assistant Director — Massachusetts Institute of Technology (06/2018 – 07/2019)
+Consultant — Liberty Mutual Insurance (06/2016 – 06/2018)
+Manager, Special Projects — Liberty Mutual Insurance (02/2015 – 06/2016)
+Owner — Sublimity (02/2014 – 02/2015)
+… và 1 vị trí khác","Leadership, Process Improvement, Process Engineering, Data Analysis, Engineering, Manufacturing, Event Planning, CVD, Semiconductors, Silicon, SPC, Tableau, Data Visualization, Statistical Process Control, Materials, Semiconductor Fabrication, Materials Science, Thin Films, Training, Business Process Improvement, Business Strategy",,"Thiếu/yếu tiêu chí bắt buộc: Kiến trúc & phát triển PDK
+Thiếu/yếu tiêu chí bắt buộc: Viết rule deck DRC/LVS (SVRF/PVL/ICV)",https://www.linkedin.com/in/kevinmccomber/,,

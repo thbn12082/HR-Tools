@@ -1,0 +1,6 @@
+# Ignore heavy local Chrome profile cache (1.7GB+) and Python bytecode
+profiles/
+__pycache__/
+*.pyc
+*_backup_*.json
+*_backup_*.csv
